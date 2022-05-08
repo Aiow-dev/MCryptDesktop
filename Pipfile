@@ -6,6 +6,13 @@ name = "pypi"
 [packages]
 pyqt5 = "*"
 pyside2 = "*"
+flake8 = "*"
+mypy = "*"
+pydocstyle = "*"
+autopep8 = "*"
+bandit = "*"
+pylama = "*"
+prospector = "*"
 
 [dev-packages]
 

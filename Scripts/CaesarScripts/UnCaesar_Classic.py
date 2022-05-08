@@ -11,4 +11,4 @@ def UnCaesar_Classic(shifr, key):   # "тулозхгб кгехуг",3
             message += i
         else:
             message += table[shifr_table.find(i)]
-    return message
+    return message, table, shifr_table

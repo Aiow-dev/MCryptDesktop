@@ -66,7 +66,7 @@ QTabBar::tab:hover {
 }</string>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="table_permutation_tab">
        <attribute name="title">
@@ -91,7 +91,7 @@ QTabBar::tab:hover {
            <string notr="true"/>
           </property>
           <property name="currentIndex">
-           <number>0</number>
+           <number>2</number>
           </property>
           <widget class="QWidget" name="simple_permutation_tab">
            <attribute name="title">
@@ -376,7 +376,7 @@ QLineEdit:focus {
                            <property name="minimumSize">
                             <size>
                              <width>105</width>
-                             <height>0</height>
+                             <height>50</height>
                             </size>
                            </property>
                            <property name="maximumSize">
@@ -446,7 +446,7 @@ QTextEdit:focus {
                            <property name="minimumSize">
                             <size>
                              <width>105</width>
-                             <height>0</height>
+                             <height>50</height>
                             </size>
                            </property>
                            <property name="maximumSize">
@@ -824,7 +824,7 @@ QLineEdit:focus {
                            <property name="minimumSize">
                             <size>
                              <width>105</width>
-                             <height>0</height>
+                             <height>50</height>
                             </size>
                            </property>
                            <property name="maximumSize">
@@ -891,7 +891,7 @@ QTextEdit:focus {
                            <property name="minimumSize">
                             <size>
                              <width>105</width>
-                             <height>0</height>
+                             <height>50</height>
                             </size>
                            </property>
                            <property name="maximumSize">
@@ -1381,7 +1381,7 @@ QLineEdit:focus {
                            <property name="minimumSize">
                             <size>
                              <width>105</width>
-                             <height>0</height>
+                             <height>50</height>
                             </size>
                            </property>
                            <property name="maximumSize">
@@ -1851,7 +1851,7 @@ QLineEdit:focus {
                            <property name="minimumSize">
                             <size>
                              <width>105</width>
-                             <height>0</height>
+                             <height>50</height>
                             </size>
                            </property>
                            <property name="maximumSize">
@@ -1993,7 +1993,7 @@ QPushButton:pressed {
          <number>0</number>
         </property>
         <item>
-         <widget class="QTabWidget" name="types_table_permutation_tabs_2">
+         <widget class="QTabWidget" name="types_caesar_system_tabs">
           <property name="styleSheet">
            <string notr="true"/>
           </property>
@@ -2006,7 +2006,7 @@ QPushButton:pressed {
            </attribute>
            <layout class="QVBoxLayout" name="verticalLayout_17">
             <item>
-             <widget class="QStackedWidget" name="stacked_widget_smp_2">
+             <widget class="QStackedWidget" name="stacked_widget_sc">
               <property name="styleSheet">
                <string notr="true">QStackedWidget {
 	color: rgb(255, 255, 255);
@@ -2015,7 +2015,7 @@ QPushButton:pressed {
               <property name="currentIndex">
                <number>0</number>
               </property>
-              <widget class="QWidget" name="main_page_smp_2">
+              <widget class="QWidget" name="main_page_sc">
                <layout class="QHBoxLayout" name="horizontalLayout_18">
                 <item>
                  <widget class="QFrame" name="encrypt_main_frame_3">
@@ -2215,7 +2215,7 @@ QLineEdit:focus {
                            <property name="minimumSize">
                             <size>
                              <width>105</width>
-                             <height>0</height>
+                             <height>50</height>
                             </size>
                            </property>
                            <property name="maximumSize">
@@ -2285,7 +2285,7 @@ QTextEdit:focus {
                            <property name="minimumSize">
                             <size>
                              <width>105</width>
-                             <height>0</height>
+                             <height>50</height>
                             </size>
                            </property>
                            <property name="maximumSize">
@@ -2398,7 +2398,7 @@ QPushButton:pressed {
                  </widget>
                 </item>
                 <item>
-                 <widget class="QFrame" name="un_encrypt_main_frame_smp_3">
+                 <widget class="QFrame" name="un_encrypt_main_frame_sc_3">
                   <property name="minimumSize">
                    <size>
                     <width>0</width>
@@ -2440,7 +2440,7 @@ QPushButton:pressed {
                         </property>
                         <layout class="QHBoxLayout" name="horizontalLayout_34">
                          <item>
-                          <widget class="QLabel" name="un_message_label_smp_2">
+                          <widget class="QLabel" name="un_message_label_sc">
                            <property name="minimumSize">
                             <size>
                              <width>105</width>
@@ -2471,7 +2471,7 @@ QPushButton:pressed {
                           </widget>
                          </item>
                          <item>
-                          <widget class="QLineEdit" name="un_message_text_smp_2">
+                          <widget class="QLineEdit" name="un_message_text_sc">
                            <property name="styleSheet">
                             <string notr="true">QLineEdit {
 	background-color: rgb(67, 67, 67);
@@ -2508,7 +2508,7 @@ QLineEdit:focus {
                         </property>
                         <layout class="QHBoxLayout" name="horizontalLayout_35">
                          <item>
-                          <widget class="QLabel" name="un_row_label_smp_2">
+                          <widget class="QLabel" name="un_key_label_sc">
                            <property name="minimumSize">
                             <size>
                              <width>105</width>
@@ -2531,7 +2531,7 @@ QLineEdit:focus {
 }</string>
                            </property>
                            <property name="text">
-                            <string>Строки</string>
+                            <string>Ключ</string>
                            </property>
                            <property name="alignment">
                             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -2539,7 +2539,7 @@ QLineEdit:focus {
                           </widget>
                          </item>
                          <item>
-                          <widget class="QLineEdit" name="un_row_text_smp_2">
+                          <widget class="QLineEdit" name="un_key_text_sc">
                            <property name="styleSheet">
                             <string notr="true">QLineEdit {
 	background-color: rgb(67, 67, 67);
@@ -2591,11 +2591,11 @@ QLineEdit:focus {
                         </property>
                         <layout class="QHBoxLayout" name="horizontalLayout_37">
                          <item>
-                          <widget class="QLabel" name="un_encryption_table_label_smp_2">
+                          <widget class="QLabel" name="un_encryption_table_label_sc">
                            <property name="minimumSize">
                             <size>
                              <width>105</width>
-                             <height>0</height>
+                             <height>50</height>
                             </size>
                            </property>
                            <property name="maximumSize">
@@ -2625,7 +2625,7 @@ QLineEdit:focus {
                           </widget>
                          </item>
                          <item>
-                          <widget class="QTextEdit" name="un_encryption_table_text_smp_2">
+                          <widget class="QTextEdit" name="un_encryption_table_text_sc">
                            <property name="styleSheet">
                             <string notr="true">QTextEdit {
 	background-color: rgb(67, 67, 67);
@@ -2658,11 +2658,11 @@ QTextEdit:focus {
                         </property>
                         <layout class="QHBoxLayout" name="horizontalLayout_38">
                          <item>
-                          <widget class="QLabel" name="un_encrypt_message_label_smp_2">
+                          <widget class="QLabel" name="un_encrypt_message_label_sc">
                            <property name="minimumSize">
                             <size>
                              <width>105</width>
-                             <height>0</height>
+                             <height>50</height>
                             </size>
                            </property>
                            <property name="maximumSize">
@@ -2692,7 +2692,7 @@ QTextEdit:focus {
                           </widget>
                          </item>
                          <item>
-                          <widget class="QLineEdit" name="un_encrypt_message_text_smp_2">
+                          <widget class="QLineEdit" name="un_encrypt_message_text_sc">
                            <property name="styleSheet">
                             <string notr="true">QLineEdit {
 	background-color: rgb(67, 67, 67);
@@ -2735,7 +2735,7 @@ QLineEdit:focus {
                      </property>
                      <layout class="QHBoxLayout" name="horizontalLayout_39">
                       <item>
-                       <widget class="QPushButton" name="un_encrypt_btn_smp_2">
+                       <widget class="QPushButton" name="un_encrypt_btn_sc">
                         <property name="minimumSize">
                          <size>
                           <width>0</width>
@@ -3152,7 +3152,7 @@ QLineEdit:focus {
                            <property name="minimumSize">
                             <size>
                              <width>105</width>
-                             <height>0</height>
+                             <height>50</height>
                             </size>
                            </property>
                            <property name="maximumSize">
@@ -3622,7 +3622,7 @@ QLineEdit:focus {
                            <property name="minimumSize">
                             <size>
                              <width>105</width>
-                             <height>0</height>
+                             <height>50</height>
                             </size>
                            </property>
                            <property name="maximumSize">
