@@ -4,9 +4,10 @@ from Scripts.TablePermutationScripts import KeyPermutation
 from Scripts.TablePermutationScripts import UnKeyPermutation
 from Scripts.CaesarScripts import Caesar_Classic
 from Scripts.CaesarScripts import UnCaesar_Classic
+from Scripts.CaesarScripts import Caesar_Afin
 
 from Core.Handlers import table_permutation_generic_handler
-from Core.Helpers import table_helpers
+from Core.Handlers import caesar_generic_handler
 
 
 class HandlersWrapper:
@@ -40,42 +41,23 @@ class HandlersWrapper:
                                                   UnKeyPermutation.UnKeyPermutation)
 
     def caesar_classic_encryption_handler(self):
-        try:
-            message_text = self.ui.message_text_sc.text()
-            encryption_key = int(self.ui.key_text_sc.text())
-
-            encrypt_message, message_table, encrypt_message_table = Caesar_Classic.Caesar_Classic(message_text,
-                                                                                                  encryption_key)
-
-            self.ui.encrypt_message_text_sc.setText(encrypt_message)
-            self.ui.encryption_table_text_sc.setText(table_helpers.tables_to_str(message_table, encrypt_message_table))
-        except ValueError as value_error:
-            print(value_error)
-
-            self.ui.encrypt_message_text_sc.setText('Ошибка. Проверьте корректность введенных данных!')
-            self.ui.encryption_table_text_sc.setText(
-                'Ошибка. Невозможно построить таблицу. Проверьте корректность введенных данных!'
-            )
-        except AttributeError as attribute_error:
-            print(attribute_error)
+        caesar_generic_handler. \
+            caesar_classic_generic_handler(self.ui.message_text_sc, self.ui.key_text_sc,
+                                           self.ui.encrypt_message_text_sc,
+                                           self.ui.encryption_table_text_sc,
+                                           Caesar_Classic.Caesar_Classic)
 
     def un_caesar_classic_encryption_handler(self):
-        try:
-            message_text = self.ui.un_message_text_sc.text()
-            encryption_key = int(self.ui.un_key_text_sc.text())
+        caesar_generic_handler. \
+            caesar_classic_generic_handler(self.ui.un_message_text_sc, self.ui.un_key_text_sc,
+                                           self.ui.un_encrypt_message_text_sc,
+                                           self.ui.un_encryption_table_text_sc,
+                                           UnCaesar_Classic.UnCaesar_Classic)
 
-            un_encrypt_message, message_table, encrypt_message_table = UnCaesar_Classic.UnCaesar_Classic(message_text,
-                                                                                                         encryption_key)
-
-            self.ui.un_encrypt_message_text_sc.setText(un_encrypt_message)
-            self.ui.un_encryption_table_text_sc.setText(table_helpers.tables_to_str(message_table,
-                                                                                    encrypt_message_table))
-        except ValueError as value_error:
-            print(value_error)
-
-            self.ui.un_message_text_sc.setText('Ошибка. Проверьте корректность введеных данных!')
-            self.ui.un_encryption_table_text_sc.setText(
-                'Ошибка. Невозможно построить таблицу. Проверьте корректность введенных данных!'
-            )
-        except AttributeError as attribute_error:
-            print(attribute_error)
+    def caesar_affine_encryption_handler(self):
+        caesar_generic_handler. \
+            caesar_affine_generic_handler(self.ui.message_text_sca, self.ui.key_a_text_sca,
+                                          self.ui.key_b_text_sca, self.ui.encrypt_message_text_sca,
+                                          self.ui.encryption_table_number_text_sca,
+                                          self.ui.encryption_table_letter_text_sca,
+                                          Caesar_Afin.Caesar_Afin)

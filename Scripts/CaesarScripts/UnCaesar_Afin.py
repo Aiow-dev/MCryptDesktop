@@ -13,4 +13,4 @@ def UnCaesar_Afin(shifr, key_a, key_b):     # "адерхлвъ бвйлдв",4,
             message += i
         else:
             message += table[shifr_table.find(i)]
-    return message
+    return message, table, shifr_table

@@ -91,7 +91,7 @@ QTabBar::tab:hover {
            <string notr="true"/>
           </property>
           <property name="currentIndex">
-           <number>2</number>
+           <number>1</number>
           </property>
           <widget class="QWidget" name="simple_permutation_tab">
            <attribute name="title">
@@ -1998,7 +1998,7 @@ QPushButton:pressed {
            <string notr="true"/>
           </property>
           <property name="currentIndex">
-           <number>0</number>
+           <number>1</number>
           </property>
           <widget class="QWidget" name="system_caesar_tab">
            <attribute name="title">
@@ -2119,7 +2119,7 @@ QLineEdit:focus {
                        </widget>
                       </item>
                       <item>
-                       <widget class="QFrame" name="encrypt_input_row_frame_3">
+                       <widget class="QFrame" name="encrypt_input_key_frame_3">
                         <property name="frameShape">
                          <enum>QFrame::StyledPanel</enum>
                         </property>
@@ -2499,7 +2499,7 @@ QLineEdit:focus {
                        </widget>
                       </item>
                       <item>
-                       <widget class="QFrame" name="un_encrypt_input_row_frame_3">
+                       <widget class="QFrame" name="un_encrypt_input_key_frame_3">
                         <property name="frameShape">
                          <enum>QFrame::StyledPanel</enum>
                         </property>
@@ -2777,13 +2777,13 @@ QPushButton:pressed {
             </item>
            </layout>
           </widget>
-          <widget class="QWidget" name="key_permutation_tab_2">
+          <widget class="QWidget" name="caesar_affine_system_tab">
            <attribute name="title">
             <string>Афинная система подстановок Цезаря</string>
            </attribute>
            <layout class="QVBoxLayout" name="verticalLayout_24">
             <item>
-             <widget class="QStackedWidget" name="stacked_widget_kmp_2">
+             <widget class="QStackedWidget" name="stacked_widget_sca">
               <property name="styleSheet">
                <string notr="true">QStackedWidget {
 	color: rgb(255, 255, 255);
@@ -2792,7 +2792,7 @@ QPushButton:pressed {
               <property name="currentIndex">
                <number>0</number>
               </property>
-              <widget class="QWidget" name="main_page_kmp_2">
+              <widget class="QWidget" name="main_page_sca">
                <layout class="QHBoxLayout" name="horizontalLayout_40">
                 <item>
                  <widget class="QFrame" name="encrypt_main_frame_4">
@@ -2837,7 +2837,7 @@ QPushButton:pressed {
                         </property>
                         <layout class="QHBoxLayout" name="horizontalLayout_41">
                          <item>
-                          <widget class="QLabel" name="message_label_kmp_2">
+                          <widget class="QLabel" name="message_label_sca">
                            <property name="minimumSize">
                             <size>
                              <width>105</width>
@@ -2868,7 +2868,7 @@ QPushButton:pressed {
                           </widget>
                          </item>
                          <item>
-                          <widget class="QLineEdit" name="message_text_kmp_2">
+                          <widget class="QLineEdit" name="message_text_sca">
                            <property name="minimumSize">
                             <size>
                              <width>0</width>
@@ -2902,7 +2902,7 @@ QLineEdit:focus {
                        </widget>
                       </item>
                       <item>
-                       <widget class="QFrame" name="encrypt_input_row_frame_4">
+                       <widget class="QFrame" name="encrypt_input_key_a_frame_4">
                         <property name="frameShape">
                          <enum>QFrame::StyledPanel</enum>
                         </property>
@@ -2911,7 +2911,7 @@ QLineEdit:focus {
                         </property>
                         <layout class="QHBoxLayout" name="horizontalLayout_42">
                          <item>
-                          <widget class="QLabel" name="row_label_kmp_2">
+                          <widget class="QLabel" name="key_a_label_sca">
                            <property name="minimumSize">
                             <size>
                              <width>105</width>
@@ -2934,7 +2934,7 @@ QLineEdit:focus {
 }</string>
                            </property>
                            <property name="text">
-                            <string>Строки</string>
+                            <string>Ключ a</string>
                            </property>
                            <property name="alignment">
                             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -2942,7 +2942,7 @@ QLineEdit:focus {
                           </widget>
                          </item>
                          <item>
-                          <widget class="QLineEdit" name="row_text_kmp_2">
+                          <widget class="QLineEdit" name="key_a_text_sca">
                            <property name="minimumSize">
                             <size>
                              <width>0</width>
@@ -2976,7 +2976,7 @@ QLineEdit:focus {
                        </widget>
                       </item>
                       <item>
-                       <widget class="QFrame" name="encrypt_input_column_frame_5">
+                       <widget class="QFrame" name="encrypt_input_key_b_frame_5">
                         <property name="frameShape">
                          <enum>QFrame::StyledPanel</enum>
                         </property>
@@ -2985,7 +2985,7 @@ QLineEdit:focus {
                         </property>
                         <layout class="QHBoxLayout" name="horizontalLayout_43">
                          <item>
-                          <widget class="QLabel" name="column_label_kmp_2">
+                          <widget class="QLabel" name="key_b_label_sca">
                            <property name="minimumSize">
                             <size>
                              <width>105</width>
@@ -3008,7 +3008,7 @@ QLineEdit:focus {
 }</string>
                            </property>
                            <property name="text">
-                            <string>Столбцы</string>
+                            <string>Ключ b</string>
                            </property>
                            <property name="alignment">
                             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -3016,7 +3016,7 @@ QLineEdit:focus {
                           </widget>
                          </item>
                          <item>
-                          <widget class="QLineEdit" name="column_text_kmp_2">
+                          <widget class="QLineEdit" name="key_b_text_sca">
                            <property name="minimumSize">
                             <size>
                              <width>0</width>
@@ -3049,80 +3049,6 @@ QLineEdit:focus {
                         </layout>
                        </widget>
                       </item>
-                      <item>
-                       <widget class="QFrame" name="encrypt_input_column_frame_6">
-                        <property name="frameShape">
-                         <enum>QFrame::StyledPanel</enum>
-                        </property>
-                        <property name="frameShadow">
-                         <enum>QFrame::Raised</enum>
-                        </property>
-                        <layout class="QHBoxLayout" name="horizontalLayout_44">
-                         <item>
-                          <widget class="QLabel" name="key_label_kmp_2">
-                           <property name="minimumSize">
-                            <size>
-                             <width>105</width>
-                             <height>0</height>
-                            </size>
-                           </property>
-                           <property name="maximumSize">
-                            <size>
-                             <width>16777215</width>
-                             <height>40</height>
-                            </size>
-                           </property>
-                           <property name="toolTip">
-                            <string notr="true">Количество столбцов шифрующей таблицы</string>
-                           </property>
-                           <property name="styleSheet">
-                            <string notr="true">QLabel {
-	font-size: 19px;
-	color: rgb(222, 221, 218);
-}</string>
-                           </property>
-                           <property name="text">
-                            <string>Ключ</string>
-                           </property>
-                           <property name="alignment">
-                            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-                           </property>
-                          </widget>
-                         </item>
-                         <item>
-                          <widget class="QLineEdit" name="key_text_kmp_2">
-                           <property name="minimumSize">
-                            <size>
-                             <width>0</width>
-                             <height>56</height>
-                            </size>
-                           </property>
-                           <property name="styleSheet">
-                            <string notr="true">QLineEdit {
-	background-color: rgb(67, 67, 67);
-	color: rgb(222, 221, 218);
-	border-radius: 3px;
-	height: 37px;
-	font-size: 16px;
-	padding: 2 px;
-	margin: 0 0 15 0 px;
-}
-
-QLineEdit:focus {
-	background-color: rgb(103, 101, 101);
-}</string>
-                           </property>
-                           <property name="placeholderText">
-                            <string>Текст ключа шифруемого сообщения</string>
-                           </property>
-                           <property name="clearButtonEnabled">
-                            <bool>true</bool>
-                           </property>
-                          </widget>
-                         </item>
-                        </layout>
-                       </widget>
-                      </item>
                      </layout>
                     </widget>
                    </item>
@@ -3139,6 +3065,116 @@ QLineEdit:focus {
                      </property>
                      <layout class="QVBoxLayout" name="verticalLayout_27">
                       <item>
+                       <widget class="QFrame" name="encrypt_output_table_frame_4">
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_47">
+                         <item>
+                          <widget class="QFrame" name="encrypt_output_table_label_frame">
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                           <layout class="QHBoxLayout" name="horizontalLayout_82">
+                            <item>
+                             <widget class="QLabel" name="encrypt_output_table_number_label_sca">
+                              <property name="styleSheet">
+                               <string notr="true">QLabel {
+	font-size: 19px;
+	color: rgb(222, 221, 218);
+}</string>
+                              </property>
+                              <property name="text">
+                               <string>Таблица номеров</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLabel" name="encrypt_output_table_letter_label_sca">
+                              <property name="styleSheet">
+                               <string notr="true">QLabel {
+	font-size: 19px;
+	color: rgb(222, 221, 218);
+}</string>
+                              </property>
+                              <property name="text">
+                               <string>Таблица букв</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                           </layout>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QFrame" name="encrypt_output_tables_frame">
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                           <layout class="QHBoxLayout" name="horizontalLayout_30">
+                            <item>
+                             <widget class="QTextEdit" name="encryption_table_number_text_sca">
+                              <property name="styleSheet">
+                               <string notr="true">QTextEdit {
+	background-color: rgb(67, 67, 67);
+	border-radius: 3px;
+	color: rgb(222, 221, 218);
+}
+
+QTextEdit:focus {
+	background-color: rgb(103, 101, 101);
+}</string>
+                              </property>
+                              <property name="readOnly">
+                               <bool>true</bool>
+                              </property>
+                              <property name="placeholderText">
+                               <string>Текст шифрующей таблицы</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QTextEdit" name="encryption_table_letter_text_sca">
+                              <property name="styleSheet">
+                               <string notr="true">QTextEdit {
+	background-color: rgb(67, 67, 67);
+	border-radius: 3px;
+	color: rgb(222, 221, 218);
+}
+
+QTextEdit:focus {
+	background-color: rgb(103, 101, 101);
+}</string>
+                              </property>
+                              <property name="readOnly">
+                               <bool>true</bool>
+                              </property>
+                              <property name="placeholderText">
+                               <string>Текст шифрующей таблицы</string>
+                              </property>
+                             </widget>
+                            </item>
+                           </layout>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item>
                        <widget class="QFrame" name="encrypt_output_message_frame_4">
                         <property name="frameShape">
                          <enum>QFrame::StyledPanel</enum>
@@ -3148,7 +3184,7 @@ QLineEdit:focus {
                         </property>
                         <layout class="QHBoxLayout" name="horizontalLayout_45">
                          <item>
-                          <widget class="QLabel" name="encrypt_message_label_kmp_2">
+                          <widget class="QLabel" name="encrypt_message_label_sca">
                            <property name="minimumSize">
                             <size>
                              <width>105</width>
@@ -3185,7 +3221,7 @@ QLineEdit:focus {
                           </widget>
                          </item>
                          <item>
-                          <widget class="QLineEdit" name="encrypt_message_text_kmp_2">
+                          <widget class="QLineEdit" name="encrypt_message_text_sca">
                            <property name="styleSheet">
                             <string notr="true">QLineEdit {
 	background-color: rgb(67, 67, 67);
@@ -3228,7 +3264,7 @@ QLineEdit:focus {
                      </property>
                      <layout class="QHBoxLayout" name="horizontalLayout_46">
                       <item>
-                       <widget class="QPushButton" name="encrypt_btn_kmp_2">
+                       <widget class="QPushButton" name="encrypt_btn_sca">
                         <property name="minimumSize">
                          <size>
                           <width>0</width>
@@ -3265,7 +3301,7 @@ QPushButton:pressed {
                  </widget>
                 </item>
                 <item>
-                 <widget class="QFrame" name="un_encrypt_main_frame_smp_4">
+                 <widget class="QFrame" name="un_encrypt_main_frame_sca_4">
                   <property name="minimumSize">
                    <size>
                     <width>0</width>
@@ -3284,9 +3320,9 @@ QPushButton:pressed {
                   <property name="frameShadow">
                    <enum>QFrame::Raised</enum>
                   </property>
-                  <layout class="QVBoxLayout" name="verticalLayout_28">
+                  <layout class="QVBoxLayout" name="verticalLayout_34">
                    <item>
-                    <widget class="QFrame" name="un_encrypt_inputs_main_frame_4">
+                    <widget class="QFrame" name="un_encrypt_inputs_main_frame_5">
                      <property name="styleSheet">
                       <string notr="true"/>
                      </property>
@@ -3296,7 +3332,7 @@ QPushButton:pressed {
                      <property name="frameShadow">
                       <enum>QFrame::Raised</enum>
                      </property>
-                     <layout class="QVBoxLayout" name="verticalLayout_29">
+                     <layout class="QVBoxLayout" name="verticalLayout_28">
                       <item>
                        <widget class="QFrame" name="un_encrypt_input_message_frame_4">
                         <property name="frameShape">
@@ -3305,9 +3341,9 @@ QPushButton:pressed {
                         <property name="frameShadow">
                          <enum>QFrame::Raised</enum>
                         </property>
-                        <layout class="QHBoxLayout" name="horizontalLayout_47">
+                        <layout class="QHBoxLayout" name="horizontalLayout_44">
                          <item>
-                          <widget class="QLabel" name="un_message_label_kmp_2">
+                          <widget class="QLabel" name="un_message_label_sca">
                            <property name="minimumSize">
                             <size>
                              <width>105</width>
@@ -3338,7 +3374,7 @@ QPushButton:pressed {
                           </widget>
                          </item>
                          <item>
-                          <widget class="QLineEdit" name="un_message_text_kmp_2">
+                          <widget class="QLineEdit" name="un_message_text_sca">
                            <property name="minimumSize">
                             <size>
                              <width>0</width>
@@ -3361,7 +3397,7 @@ QLineEdit:focus {
 }</string>
                            </property>
                            <property name="placeholderText">
-                            <string>Текст расшифруемого сообщения</string>
+                            <string>Текст шифруемого сообщения</string>
                            </property>
                            <property name="clearButtonEnabled">
                             <bool>true</bool>
@@ -3372,16 +3408,16 @@ QLineEdit:focus {
                        </widget>
                       </item>
                       <item>
-                       <widget class="QFrame" name="un_encrypt_input_row_frame_4">
+                       <widget class="QFrame" name="un_encrypt_input_key_a_frame_5">
                         <property name="frameShape">
                          <enum>QFrame::StyledPanel</enum>
                         </property>
                         <property name="frameShadow">
                          <enum>QFrame::Raised</enum>
                         </property>
-                        <layout class="QHBoxLayout" name="horizontalLayout_48">
+                        <layout class="QHBoxLayout" name="horizontalLayout_47">
                          <item>
-                          <widget class="QLabel" name="un_row_label_kmp_2">
+                          <widget class="QLabel" name="un_key_a_label_sca">
                            <property name="minimumSize">
                             <size>
                              <width>105</width>
@@ -3404,7 +3440,7 @@ QLineEdit:focus {
 }</string>
                            </property>
                            <property name="text">
-                            <string>Строки</string>
+                            <string>Ключ a</string>
                            </property>
                            <property name="alignment">
                             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -3412,7 +3448,7 @@ QLineEdit:focus {
                           </widget>
                          </item>
                          <item>
-                          <widget class="QLineEdit" name="un_row_text_kmp_2">
+                          <widget class="QLineEdit" name="un_key_a_text_sca">
                            <property name="minimumSize">
                             <size>
                              <width>0</width>
@@ -3446,16 +3482,16 @@ QLineEdit:focus {
                        </widget>
                       </item>
                       <item>
-                       <widget class="QFrame" name="un_encrypt_input_column_frame_5">
+                       <widget class="QFrame" name="un_encrypt_input_key_b_frame_6">
                         <property name="frameShape">
                          <enum>QFrame::StyledPanel</enum>
                         </property>
                         <property name="frameShadow">
                          <enum>QFrame::Raised</enum>
                         </property>
-                        <layout class="QHBoxLayout" name="horizontalLayout_49">
+                        <layout class="QHBoxLayout" name="horizontalLayout_48">
                          <item>
-                          <widget class="QLabel" name="un_column_label_kmp_3">
+                          <widget class="QLabel" name="un_key_b_label_sca">
                            <property name="minimumSize">
                             <size>
                              <width>105</width>
@@ -3478,7 +3514,7 @@ QLineEdit:focus {
 }</string>
                            </property>
                            <property name="text">
-                            <string>Столбцы</string>
+                            <string>Ключ b</string>
                            </property>
                            <property name="alignment">
                             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -3486,7 +3522,7 @@ QLineEdit:focus {
                           </widget>
                          </item>
                          <item>
-                          <widget class="QLineEdit" name="un_column_text_kmp_2">
+                          <widget class="QLineEdit" name="un_key_b_text_sca">
                            <property name="minimumSize">
                             <size>
                              <width>0</width>
@@ -3519,85 +3555,11 @@ QLineEdit:focus {
                         </layout>
                        </widget>
                       </item>
-                      <item>
-                       <widget class="QFrame" name="un_encrypt_input_column_frame_6">
-                        <property name="frameShape">
-                         <enum>QFrame::StyledPanel</enum>
-                        </property>
-                        <property name="frameShadow">
-                         <enum>QFrame::Raised</enum>
-                        </property>
-                        <layout class="QHBoxLayout" name="horizontalLayout_50">
-                         <item>
-                          <widget class="QLabel" name="un_column_label_kmp_4">
-                           <property name="minimumSize">
-                            <size>
-                             <width>105</width>
-                             <height>0</height>
-                            </size>
-                           </property>
-                           <property name="maximumSize">
-                            <size>
-                             <width>16777215</width>
-                             <height>40</height>
-                            </size>
-                           </property>
-                           <property name="toolTip">
-                            <string notr="true">Количество столбцов шифрующей таблицы</string>
-                           </property>
-                           <property name="styleSheet">
-                            <string notr="true">QLabel {
-	font-size: 19px;
-	color: rgb(222, 221, 218);
-}</string>
-                           </property>
-                           <property name="text">
-                            <string>Ключ</string>
-                           </property>
-                           <property name="alignment">
-                            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-                           </property>
-                          </widget>
-                         </item>
-                         <item>
-                          <widget class="QLineEdit" name="un_key_text_kmp_2">
-                           <property name="minimumSize">
-                            <size>
-                             <width>0</width>
-                             <height>56</height>
-                            </size>
-                           </property>
-                           <property name="styleSheet">
-                            <string notr="true">QLineEdit {
-	background-color: rgb(67, 67, 67);
-	color: rgb(222, 221, 218);
-	border-radius: 3px;
-	height: 37px;
-	font-size: 16px;
-	padding: 2 px;
-	margin: 0 0 15 0 px;
-}
-
-QLineEdit:focus {
-	background-color: rgb(103, 101, 101);
-}</string>
-                           </property>
-                           <property name="placeholderText">
-                            <string>Текст ключа расшифруемого сообщения</string>
-                           </property>
-                           <property name="clearButtonEnabled">
-                            <bool>true</bool>
-                           </property>
-                          </widget>
-                         </item>
-                        </layout>
-                       </widget>
-                      </item>
                      </layout>
                     </widget>
                    </item>
                    <item>
-                    <widget class="QFrame" name="un_encrypt_outputs_main_frame_4">
+                    <widget class="QFrame" name="un_encrypt_outputs_main_frame_5">
                      <property name="styleSheet">
                       <string notr="true"/>
                      </property>
@@ -3607,18 +3569,128 @@ QLineEdit:focus {
                      <property name="frameShadow">
                       <enum>QFrame::Raised</enum>
                      </property>
-                     <layout class="QVBoxLayout" name="verticalLayout_30">
+                     <layout class="QVBoxLayout" name="verticalLayout_33">
                       <item>
-                       <widget class="QFrame" name="un_encrypt_output_message_frame_4">
+                       <widget class="QFrame" name="un_encrypt_output_table_frame_7">
                         <property name="frameShape">
                          <enum>QFrame::StyledPanel</enum>
                         </property>
                         <property name="frameShadow">
                          <enum>QFrame::Raised</enum>
                         </property>
-                        <layout class="QHBoxLayout" name="horizontalLayout_51">
+                        <layout class="QVBoxLayout" name="verticalLayout_50">
                          <item>
-                          <widget class="QLabel" name="un_encrypt_message_label_kmp_2">
+                          <widget class="QFrame" name="un_encrypt_output_table_label_frame">
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                           <layout class="QHBoxLayout" name="horizontalLayout_85">
+                            <item>
+                             <widget class="QLabel" name="un_encrypt_output_table_number_label_sca">
+                              <property name="styleSheet">
+                               <string notr="true">QLabel {
+	font-size: 19px;
+	color: rgb(222, 221, 218);
+}</string>
+                              </property>
+                              <property name="text">
+                               <string>Таблица номеров</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QLabel" name="un_encrypt_output_table_letter_label_sca">
+                              <property name="styleSheet">
+                               <string notr="true">QLabel {
+	font-size: 19px;
+	color: rgb(222, 221, 218);
+}</string>
+                              </property>
+                              <property name="text">
+                               <string>Таблица букв</string>
+                              </property>
+                              <property name="alignment">
+                               <set>Qt::AlignCenter</set>
+                              </property>
+                             </widget>
+                            </item>
+                           </layout>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QFrame" name="un_encrypt_output_tables_frame_4">
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                           <layout class="QHBoxLayout" name="horizontalLayout_53">
+                            <item>
+                             <widget class="QTextEdit" name="un_encryption_table_number_text_sca">
+                              <property name="styleSheet">
+                               <string notr="true">QTextEdit {
+	background-color: rgb(67, 67, 67);
+	border-radius: 3px;
+	color: rgb(222, 221, 218);
+}
+
+QTextEdit:focus {
+	background-color: rgb(103, 101, 101);
+}</string>
+                              </property>
+                              <property name="readOnly">
+                               <bool>true</bool>
+                              </property>
+                              <property name="placeholderText">
+                               <string>Текст шифрующей таблицы</string>
+                              </property>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QTextEdit" name="un_encryption_table_letter_text_sca">
+                              <property name="styleSheet">
+                               <string notr="true">QTextEdit {
+	background-color: rgb(67, 67, 67);
+	border-radius: 3px;
+	color: rgb(222, 221, 218);
+}
+
+QTextEdit:focus {
+	background-color: rgb(103, 101, 101);
+}</string>
+                              </property>
+                              <property name="readOnly">
+                               <bool>true</bool>
+                              </property>
+                              <property name="placeholderText">
+                               <string>Текст шифрующей таблицы</string>
+                              </property>
+                             </widget>
+                            </item>
+                           </layout>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QFrame" name="un_encrypt_output_message_frame_7">
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_54">
+                         <item>
+                          <widget class="QLabel" name="un_encrypt_message_label_sca">
                            <property name="minimumSize">
                             <size>
                              <width>105</width>
@@ -3641,7 +3713,10 @@ QLineEdit:focus {
 }</string>
                            </property>
                            <property name="text">
-                            <string>Расшифрованное сообщение</string>
+                            <string>Зашифрованное сообщение</string>
+                           </property>
+                           <property name="scaledContents">
+                            <bool>false</bool>
                            </property>
                            <property name="alignment">
                             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -3652,7 +3727,7 @@ QLineEdit:focus {
                           </widget>
                          </item>
                          <item>
-                          <widget class="QLineEdit" name="un_encrypt_message_text_kmp_2">
+                          <widget class="QLineEdit" name="un_encrypt_message_text_sca">
                            <property name="styleSheet">
                             <string notr="true">QLineEdit {
 	background-color: rgb(67, 67, 67);
@@ -3672,44 +3747,41 @@ QLineEdit:focus {
                             <bool>true</bool>
                            </property>
                            <property name="placeholderText">
-                            <string>Текст расшифрованного сообщения</string>
+                            <string>Текст зашифрованного сообщения</string>
                            </property>
                           </widget>
                          </item>
                         </layout>
                        </widget>
                       </item>
-                     </layout>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QFrame" name="un_encrypt_buttons_main_frame_4">
-                     <property name="styleSheet">
-                      <string notr="true"/>
-                     </property>
-                     <property name="frameShape">
-                      <enum>QFrame::StyledPanel</enum>
-                     </property>
-                     <property name="frameShadow">
-                      <enum>QFrame::Raised</enum>
-                     </property>
-                     <layout class="QHBoxLayout" name="horizontalLayout_52">
                       <item>
-                       <widget class="QPushButton" name="un_encrypt_btn_kmp_2">
-                        <property name="minimumSize">
-                         <size>
-                          <width>0</width>
-                          <height>41</height>
-                         </size>
-                        </property>
-                        <property name="maximumSize">
-                         <size>
-                          <width>251</width>
-                          <height>16777215</height>
-                         </size>
-                        </property>
+                       <widget class="QFrame" name="un_encrypt_buttons_main_frame_4">
                         <property name="styleSheet">
-                         <string notr="true">QPushButton {
+                         <string notr="true"/>
+                        </property>
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_52">
+                         <item>
+                          <widget class="QPushButton" name="un_encrypt_btn_sca">
+                           <property name="minimumSize">
+                            <size>
+                             <width>0</width>
+                             <height>41</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>251</width>
+                             <height>16777215</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QPushButton {
 	background-color: rgb(67, 67, 67);
 	color: rgb(222, 221, 218);
 	border: none;
@@ -3719,10 +3791,13 @@ QLineEdit:focus {
 QPushButton:pressed {
 	background-color: rgb(103, 101, 101);
 }</string>
-                        </property>
-                        <property name="text">
-                         <string>Расшифровать сообщение</string>
-                        </property>
+                           </property>
+                           <property name="text">
+                            <string>Расшифровать сообщение</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
                        </widget>
                       </item>
                      </layout>
@@ -3774,7 +3849,7 @@ QPushButton:pressed {
   </widget>
  </widget>
  <resources>
-  <include location="../Resources/resources.qrc"/>
+  <include location="../../Resources/resources.qrc"/>
  </resources>
  <connections/>
 </ui>

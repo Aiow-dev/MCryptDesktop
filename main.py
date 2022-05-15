@@ -22,5 +22,6 @@ if __name__ == '__main__':
     ui.un_encrypt_btn_kmp.clicked.connect(handlers_wrapper.un_key_permutation_encryption_handler)
     ui.encrypt_btn_sc.clicked.connect(handlers_wrapper.caesar_classic_encryption_handler)
     ui.un_encrypt_btn_sc.clicked.connect(handlers_wrapper.un_caesar_classic_encryption_handler)
+    ui.encrypt_btn_sca.clicked.connect(handlers_wrapper.caesar_affine_encryption_handler)
 
     sys.exit(app.exec_())

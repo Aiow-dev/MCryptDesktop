@@ -13,4 +13,4 @@ def Caesar_Afin(message, key_a, key_b):    # "ПРИЛЕТАЮ ЗАВТРА",4,2
             shifr += i
         else:
             shifr += shifr_table[table.find(i)]
-    return shifr
+    return shifr, table, shifr_table
