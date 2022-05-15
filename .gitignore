@@ -215,3 +215,6 @@ dmypy.json
 cython_debug/
 .idea/
 .vscode/
+
+MCryptDesktop.pyproject.user
+.qt_for_python/

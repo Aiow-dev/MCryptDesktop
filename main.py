@@ -18,10 +18,14 @@ if __name__ == '__main__':
 
     ui.encrypt_btn_smp.clicked.connect(handlers_wrapper.simple_permutation_encryption_handler)
     ui.un_encrypt_btn_smp.clicked.connect(handlers_wrapper.un_simple_permutation_encryption_handler)
+
     ui.encrypt_btn_kmp.clicked.connect(handlers_wrapper.key_permutation_encryption_handler)
     ui.un_encrypt_btn_kmp.clicked.connect(handlers_wrapper.un_key_permutation_encryption_handler)
+
     ui.encrypt_btn_sc.clicked.connect(handlers_wrapper.caesar_classic_encryption_handler)
     ui.un_encrypt_btn_sc.clicked.connect(handlers_wrapper.un_caesar_classic_encryption_handler)
+
     ui.encrypt_btn_sca.clicked.connect(handlers_wrapper.caesar_affine_encryption_handler)
+    ui.un_encrypt_btn_sca.clicked.connect(handlers_wrapper.un_caesar_affine_encryption_handler)
 
     sys.exit(app.exec_())
