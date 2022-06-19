@@ -91,7 +91,7 @@ QTabBar::tab:hover {
            <string notr="true"/>
           </property>
           <property name="currentIndex">
-           <number>1</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="simple_permutation_tab">
            <attribute name="title">
@@ -3118,7 +3118,7 @@ QLineEdit:focus {
                           </widget>
                          </item>
                          <item>
-                          <widget class="QFrame" name="encrypt_output_tables_frame">
+                          <widget class="QFrame" name="encrypt_output_text_tables_frame">
                            <property name="frameShape">
                             <enum>QFrame::StyledPanel</enum>
                            </property>
@@ -3166,6 +3166,72 @@ QTextEdit:focus {
                               <property name="placeholderText">
                                <string>Текст шифрующей таблицы</string>
                               </property>
+                             </widget>
+                            </item>
+                           </layout>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QFrame" name="encrypt_output_tables_frame">
+                           <property name="frameShape">
+                            <enum>QFrame::StyledPanel</enum>
+                           </property>
+                           <property name="frameShadow">
+                            <enum>QFrame::Raised</enum>
+                           </property>
+                           <layout class="QHBoxLayout" name="horizontalLayout_36">
+                            <item>
+                             <widget class="QTableWidget" name="encryption_table_number_sca">
+                              <property name="rowCount">
+                               <number>11</number>
+                              </property>
+                              <property name="columnCount">
+                               <number>6</number>
+                              </property>
+                              <row/>
+                              <row/>
+                              <row/>
+                              <row/>
+                              <row/>
+                              <row/>
+                              <row/>
+                              <row/>
+                              <row/>
+                              <row/>
+                              <row/>
+                              <column/>
+                              <column/>
+                              <column/>
+                              <column/>
+                              <column/>
+                              <column/>
+                             </widget>
+                            </item>
+                            <item>
+                             <widget class="QTableWidget" name="encryption_table_letter_sca">
+                              <property name="rowCount">
+                               <number>11</number>
+                              </property>
+                              <property name="columnCount">
+                               <number>6</number>
+                              </property>
+                              <row/>
+                              <row/>
+                              <row/>
+                              <row/>
+                              <row/>
+                              <row/>
+                              <row/>
+                              <row/>
+                              <row/>
+                              <row/>
+                              <row/>
+                              <column/>
+                              <column/>
+                              <column/>
+                              <column/>
+                              <column/>
+                              <column/>
                              </widget>
                             </item>
                            </layout>

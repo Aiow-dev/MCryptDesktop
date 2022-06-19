@@ -13,6 +13,9 @@ autopep8 = "*"
 bandit = "*"
 pylama = "*"
 prospector = "*"
+prettytable = "*"
+py = "*"
+pylint = "*"
 
 [dev-packages]
 

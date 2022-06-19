@@ -61,6 +61,8 @@ class HandlersWrapper:
                                           self.ui.key_b_text_sca, self.ui.encrypt_message_text_sca,
                                           self.ui.encryption_table_number_text_sca,
                                           self.ui.encryption_table_letter_text_sca,
+                                          self.ui.encryption_table_number_sca,
+                                          self.ui.encryption_table_letter_sca,
                                           Caesar_Afin.Caesar_Afin)
 
     def un_caesar_affine_encryption_handler(self):
