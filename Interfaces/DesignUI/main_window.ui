@@ -1998,11 +1998,11 @@ QPushButton:pressed {
            <string notr="true"/>
           </property>
           <property name="currentIndex">
-           <number>2</number>
+           <number>3</number>
           </property>
           <widget class="QWidget" name="system_caesar_tab">
            <attribute name="title">
-            <string>Система шифрования Цезаря</string>
+            <string>Система Цезаря</string>
            </attribute>
            <layout class="QVBoxLayout" name="verticalLayout_17">
             <item>
@@ -2965,7 +2965,7 @@ QLineEdit:focus {
 }</string>
                            </property>
                            <property name="placeholderText">
-                            <string>Количество строк шифрующей таблицы</string>
+                            <string>Числовой ключ a</string>
                            </property>
                            <property name="clearButtonEnabled">
                             <bool>true</bool>
@@ -3039,7 +3039,7 @@ QLineEdit:focus {
 }</string>
                            </property>
                            <property name="placeholderText">
-                            <string>Количество столбцов шифрующей таблицы</string>
+                            <string>Числовой ключ b</string>
                            </property>
                            <property name="clearButtonEnabled">
                             <bool>true</bool>
@@ -3347,7 +3347,27 @@ QPushButton:pressed {
                            <property name="styleSheet">
                             <string notr="true">QTableWidget {
 	gridline-color: rgb(67, 67, 67);
+}
+
+QHeaderView::section {
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(67, 67, 67);
+	background-color: rgb(25, 24, 24);
+}
+
+QTableCornerButton::section {
+	border: 1px solid rgb(67, 67, 67);
+	background-color: rgb(25, 24, 24);
 }</string>
+                           </property>
+                           <property name="sizeAdjustPolicy">
+                            <enum>QAbstractScrollArea::AdjustToContents</enum>
+                           </property>
+                           <property name="editTriggers">
+                            <set>QAbstractItemView::NoEditTriggers</set>
+                           </property>
+                           <property name="verticalScrollMode">
+                            <enum>QAbstractItemView::ScrollPerPixel</enum>
                            </property>
                            <property name="rowCount">
                             <number>11</number>
@@ -3379,7 +3399,24 @@ QPushButton:pressed {
                            <property name="styleSheet">
                             <string notr="true">QTableWidget {
 	gridline-color: rgb(67, 67, 67);
+}
+
+QHeaderView::section {
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(67, 67, 67);
+	background-color: rgb(25, 24, 24);
+}
+
+QTableCornerButton::section {
+	border: 1px solid rgb(67, 67, 67);
+	background-color: rgb(25, 24, 24);
 }</string>
+                           </property>
+                           <property name="sizeAdjustPolicy">
+                            <enum>QAbstractScrollArea::AdjustToContents</enum>
+                           </property>
+                           <property name="editTriggers">
+                            <set>QAbstractItemView::NoEditTriggers</set>
                            </property>
                            <property name="rowCount">
                             <number>11</number>
@@ -3609,7 +3646,7 @@ QLineEdit:focus {
 }</string>
                            </property>
                            <property name="placeholderText">
-                            <string>Количество строк шифрующей таблицы</string>
+                            <string>Числовой ключ a</string>
                            </property>
                            <property name="clearButtonEnabled">
                             <bool>true</bool>
@@ -3683,7 +3720,7 @@ QLineEdit:focus {
 }</string>
                            </property>
                            <property name="placeholderText">
-                            <string>Количество столбцов шифрующей таблицы</string>
+                            <string>Числовой ключ b</string>
                            </property>
                            <property name="clearButtonEnabled">
                             <bool>true</bool>
@@ -3991,7 +4028,24 @@ QPushButton:pressed {
                            <property name="styleSheet">
                             <string notr="true">QTableWidget {
 	gridline-color: rgb(67, 67, 67);
+}
+
+QHeaderView::section {
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(67, 67, 67);
+	background-color: rgb(25, 24, 24);
+}
+
+QTableCornerButton::section {
+	border: 1px solid rgb(67, 67, 67);
+	background-color: rgb(25, 24, 24);
 }</string>
+                           </property>
+                           <property name="sizeAdjustPolicy">
+                            <enum>QAbstractScrollArea::AdjustToContents</enum>
+                           </property>
+                           <property name="editTriggers">
+                            <set>QAbstractItemView::NoEditTriggers</set>
                            </property>
                            <property name="rowCount">
                             <number>11</number>
@@ -4023,7 +4077,24 @@ QPushButton:pressed {
                            <property name="styleSheet">
                             <string notr="true">QTableWidget {
 	gridline-color: rgb(67, 67, 67);
+}
+
+QHeaderView::section {
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(67, 67, 67);
+	background-color: rgb(25, 24, 24);
+}
+
+QTableCornerButton::section {
+	border: 1px solid rgb(67, 67, 67);
+	background-color: rgb(25, 24, 24);
 }</string>
+                           </property>
+                           <property name="sizeAdjustPolicy">
+                            <enum>QAbstractScrollArea::AdjustToContents</enum>
+                           </property>
+                           <property name="editTriggers">
+                            <set>QAbstractItemView::NoEditTriggers</set>
                            </property>
                            <property name="rowCount">
                             <number>11</number>
@@ -4065,10 +4136,582 @@ QPushButton:pressed {
             </item>
            </layout>
           </widget>
-          <widget class="QWidget" name="double_key_permutation_tab_2">
+          <widget class="QWidget" name="caesar_key_system_tab">
            <attribute name="title">
-            <string>Система шифрования Цезаря с ключевым словом</string>
+            <string>Система Цезаря с ключевым словом</string>
            </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_53">
+            <item>
+             <widget class="QStackedWidget" name="stacked_widget_sck">
+              <property name="styleSheet">
+               <string notr="true">QStackedWidget {
+	color: rgb(255, 255, 255);
+}</string>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <widget class="QWidget" name="main_page_sck">
+               <layout class="QHBoxLayout" name="horizontalLayout_66">
+                <item>
+                 <widget class="QFrame" name="encrypt_main_frame_sck_2">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QFrame {
+	background-color: rgb(25, 24, 24);
+	border-radius: 10px;
+}</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_41">
+                   <item>
+                    <widget class="QFrame" name="encrypt_inputs_main_frame_7">
+                     <property name="styleSheet">
+                      <string notr="true"/>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_43">
+                      <item>
+                       <widget class="QFrame" name="encrypt_input_message_frame_6">
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_58">
+                         <item>
+                          <widget class="QLabel" name="message_label_sck">
+                           <property name="minimumSize">
+                            <size>
+                             <width>105</width>
+                             <height>0</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>16777215</width>
+                             <height>40</height>
+                            </size>
+                           </property>
+                           <property name="toolTip">
+                            <string>Текст шифруемого сообщения</string>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel {
+	font-size: 19px;
+	color: rgb(222, 221, 218);
+}</string>
+                           </property>
+                           <property name="text">
+                            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Сообщение&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLineEdit" name="message_text_sck">
+                           <property name="minimumSize">
+                            <size>
+                             <width>0</width>
+                             <height>56</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLineEdit {
+	background-color: rgb(67, 67, 67);
+	color: rgb(222, 221, 218);
+	border-radius: 3px;
+	height: 37px;
+	font-size: 16px;
+	padding: 2 px;
+	margin: 0 0 15 0 px;
+}
+
+QLineEdit:focus {
+	background-color: rgb(103, 101, 101);
+}</string>
+                           </property>
+                           <property name="placeholderText">
+                            <string>Текст шифруемого сообщения</string>
+                           </property>
+                           <property name="clearButtonEnabled">
+                            <bool>true</bool>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QFrame" name="encrypt_input_key_word_frame">
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_59">
+                         <item>
+                          <widget class="QLabel" name="key_word_label_sck">
+                           <property name="minimumSize">
+                            <size>
+                             <width>105</width>
+                             <height>45</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>64</width>
+                             <height>40</height>
+                            </size>
+                           </property>
+                           <property name="toolTip">
+                            <string>Количество строк шифрующей таблицы</string>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel {
+	font-size: 19px;
+	color: rgb(222, 221, 218);
+}</string>
+                           </property>
+                           <property name="text">
+                            <string>Ключевое слово</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                           </property>
+                           <property name="wordWrap">
+                            <bool>true</bool>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLineEdit" name="key_word_text_sck">
+                           <property name="minimumSize">
+                            <size>
+                             <width>0</width>
+                             <height>56</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLineEdit {
+	background-color: rgb(67, 67, 67);
+	color: rgb(222, 221, 218);
+	border-radius: 3px;
+	height: 37px;
+	font-size: 16px;
+	padding: 2 px;
+	margin: 0 0 15 0 px;
+}
+
+QLineEdit:focus {
+	background-color: rgb(103, 101, 101);
+}</string>
+                           </property>
+                           <property name="placeholderText">
+                            <string>Текст ключевого слова</string>
+                           </property>
+                           <property name="clearButtonEnabled">
+                            <bool>true</bool>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QFrame" name="encrypt_input_key_k_frame">
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_60">
+                         <item>
+                          <widget class="QLabel" name="key_k_label_sck">
+                           <property name="minimumSize">
+                            <size>
+                             <width>105</width>
+                             <height>0</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>16777215</width>
+                             <height>40</height>
+                            </size>
+                           </property>
+                           <property name="toolTip">
+                            <string notr="true">Количество столбцов шифрующей таблицы</string>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel {
+	font-size: 19px;
+	color: rgb(222, 221, 218);
+}</string>
+                           </property>
+                           <property name="text">
+                            <string>Ключ k</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLineEdit" name="key_k_text_sck">
+                           <property name="minimumSize">
+                            <size>
+                             <width>0</width>
+                             <height>56</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLineEdit {
+	background-color: rgb(67, 67, 67);
+	color: rgb(222, 221, 218);
+	border-radius: 3px;
+	height: 37px;
+	font-size: 16px;
+	padding: 2 px;
+	margin: 0 0 15 0 px;
+}
+
+QLineEdit:focus {
+	background-color: rgb(103, 101, 101);
+}</string>
+                           </property>
+                           <property name="placeholderText">
+                            <string>Числовой ключ k</string>
+                           </property>
+                           <property name="clearButtonEnabled">
+                            <bool>true</bool>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QFrame" name="encrypt_outputs_main_frame_7">
+                     <property name="styleSheet">
+                      <string notr="true"/>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_45">
+                      <item>
+                       <widget class="QFrame" name="encrypt_output_table_frame_9">
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_36">
+                         <item>
+                          <widget class="QLabel" name="encryption_table_text_label_sck">
+                           <property name="minimumSize">
+                            <size>
+                             <width>105</width>
+                             <height>45</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>16777215</width>
+                             <height>45</height>
+                            </size>
+                           </property>
+                           <property name="toolTip">
+                            <string notr="true">Количество столбцов шифрующей таблицы</string>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel {
+	font-size: 19px;
+	color: rgb(222, 221, 218);
+}</string>
+                           </property>
+                           <property name="text">
+                            <string>Таблица подстановок</string>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                           </property>
+                           <property name="wordWrap">
+                            <bool>true</bool>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QTextEdit" name="encryption_table_text_sck">
+                           <property name="styleSheet">
+                            <string notr="true">QTextEdit {
+	background-color: rgb(67, 67, 67);
+	border-radius: 3px;
+	color: rgb(222, 221, 218);
+}
+
+QTextEdit:focus {
+	background-color: rgb(103, 101, 101);
+}</string>
+                           </property>
+                           <property name="readOnly">
+                            <bool>true</bool>
+                           </property>
+                           <property name="placeholderText">
+                            <string>Текст таблицы подстановок таблицы</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QFrame" name="encrypt_output_message_frame_9">
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_62">
+                         <item>
+                          <widget class="QLabel" name="encrypt_message_label_sck">
+                           <property name="minimumSize">
+                            <size>
+                             <width>105</width>
+                             <height>50</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>16777215</width>
+                             <height>40</height>
+                            </size>
+                           </property>
+                           <property name="toolTip">
+                            <string>Шифруемое сообщение</string>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QLabel {
+	font-size: 19px;
+	color: rgb(222, 221, 218);
+}</string>
+                           </property>
+                           <property name="text">
+                            <string>Зашифрованное сообщение</string>
+                           </property>
+                           <property name="scaledContents">
+                            <bool>false</bool>
+                           </property>
+                           <property name="alignment">
+                            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                           </property>
+                           <property name="wordWrap">
+                            <bool>true</bool>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLineEdit" name="encrypt_message_text_sck">
+                           <property name="styleSheet">
+                            <string notr="true">QLineEdit {
+	background-color: rgb(67, 67, 67);
+	color: rgb(222, 221, 218);
+	border-radius: 3px;
+	height: 37px;
+	font-size: 16px;
+	padding: 2 px;
+	margin: 0 0 15 0 px;
+}
+
+QLineEdit:focus {
+	background-color: rgb(103, 101, 101);
+}</string>
+                           </property>
+                           <property name="readOnly">
+                            <bool>true</bool>
+                           </property>
+                           <property name="placeholderText">
+                            <string>Текст зашифрованного сообщения</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QFrame" name="encrypt_buttons_main_frame_6">
+                        <property name="styleSheet">
+                         <string notr="true"/>
+                        </property>
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QHBoxLayout" name="horizontalLayout_63">
+                         <item>
+                          <widget class="QPushButton" name="encrypt_btn_sck">
+                           <property name="minimumSize">
+                            <size>
+                             <width>0</width>
+                             <height>41</height>
+                            </size>
+                           </property>
+                           <property name="maximumSize">
+                            <size>
+                             <width>251</width>
+                             <height>16777215</height>
+                            </size>
+                           </property>
+                           <property name="styleSheet">
+                            <string notr="true">QPushButton {
+	background-color: rgb(67, 67, 67);
+	color: rgb(222, 221, 218);
+	border: none;
+	border-radius: 3px;
+}
+
+QPushButton:pressed {
+	background-color: rgb(103, 101, 101);
+}</string>
+                           </property>
+                           <property name="text">
+                            <string>Зашифровать сообщение</string>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="encrypt_main_frame_sck">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QFrame {
+	background-color: rgb(25, 24, 24);
+	border-radius: 10px;
+}</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_46">
+                   <item>
+                    <widget class="QFrame" name="encrypt_outputs_main_frame_8">
+                     <property name="styleSheet">
+                      <string notr="true"/>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_48">
+                      <item>
+                       <widget class="QTableWidget" name="encryption_table_sck">
+                        <property name="styleSheet">
+                         <string notr="true">QTableWidget {
+	gridline-color: rgb(67, 67, 67);
+}
+
+QHeaderView::section {
+	color: rgb(255, 255, 255);
+	border: 1px solid rgb(67, 67, 67);
+	background-color: rgb(25, 24, 24);
+}
+
+QTableCornerButton::section {
+	border: 1px solid rgb(67, 67, 67);
+	background-color: rgb(25, 24, 24);
+}</string>
+                        </property>
+                        <property name="sizeAdjustPolicy">
+                         <enum>QAbstractScrollArea::AdjustToContents</enum>
+                        </property>
+                        <property name="editTriggers">
+                         <set>QAbstractItemView::NoEditTriggers</set>
+                        </property>
+                        <property name="rowCount">
+                         <number>11</number>
+                        </property>
+                        <property name="columnCount">
+                         <number>6</number>
+                        </property>
+                        <row/>
+                        <row/>
+                        <row/>
+                        <row/>
+                        <row/>
+                        <row/>
+                        <row/>
+                        <row/>
+                        <row/>
+                        <row/>
+                        <row/>
+                        <column/>
+                        <column/>
+                        <column/>
+                        <column/>
+                        <column/>
+                        <column/>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
           </widget>
          </widget>
         </item>

@@ -115,7 +115,7 @@ def construct_affine_table_letter_text(key_a_text, key_b_text, number_column_val
     ))
 
 
-def construct_affine_table_column(number_column, column_value, encryption_message_table_obj):
+def construct_table_column(number_column, column_value, encryption_message_table_obj):
     for number_row, value in enumerate(column_value):
         column_item = QTableWidgetItem(value)
         column_item.setForeground(QBrush(QColor(255, 255, 255)))
@@ -128,5 +128,29 @@ def construct_affine_table(key_a_text, key_b_text, column_values, encryption_mes
         generate_affine_table_column_headers(key_a_text, key_b_text)
     )
 
-    for number_column, number_column_value in enumerate(column_values):
-        construct_affine_table_column(number_column, number_column_value, encryption_message_table_obj)
+    for number_column, column_value in enumerate(column_values):
+        construct_table_column(number_column, column_value, encryption_message_table_obj)
+
+
+def construct_caesar_key_table_text(replace_values):
+    column_headers = ('№', '->', '№', '->', '№', '->')
+
+    column_values = (
+        generate_affine_table_letter_column([str(i) for i in range(11)]),
+        replace_values[:11],
+        generate_affine_table_letter_column([str(i) for i in range(11, 22)]),
+        replace_values[11:22],
+        generate_affine_table_letter_column([str(i) for i in range(22, 33)]),
+        replace_values[22:33]
+    )
+
+    return column_values, construct_table(column_values, columns_headers=column_headers)
+
+
+def construct_caesar_key_table(column_values, encryption_message_table_obj):
+    column_headers = ('№', '->', '№', '->', '№', '->')
+
+    encryption_message_table_obj.setHorizontalHeaderLabels(column_headers)
+
+    for number_column, column_value in enumerate(column_values):
+        construct_table_column(number_column, column_value, encryption_message_table_obj)

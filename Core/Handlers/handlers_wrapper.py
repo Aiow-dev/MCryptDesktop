@@ -6,6 +6,7 @@ from Scripts.CaesarScripts import Caesar_Classic
 from Scripts.CaesarScripts import UnCaesar_Classic
 from Scripts.CaesarScripts import Caesar_Afin
 from Scripts.CaesarScripts import UnCaesar_Afin
+from Scripts.CaesarScripts import Caesar_with_key
 
 from Core.Handlers import table_permutation_generic_handler
 from Core.Handlers import caesar_generic_handler
@@ -74,3 +75,10 @@ class HandlersWrapper:
                                           self.ui.un_encryption_table_number_sca,
                                           self.ui.un_encryption_table_letter_sca,
                                           UnCaesar_Afin.UnCaesar_Afin)
+
+    def caesar_key_encryption_handler(self):
+        caesar_generic_handler.caesar_key_generic_handler(self.ui.message_text_sck, self.ui.key_word_text_sck,
+                                                          self.ui.key_k_text_sck, self.ui.encrypt_message_text_sck,
+                                                          self.ui.encryption_table_text_sck,
+                                                          self.ui.encryption_table_sck,
+                                                          Caesar_with_key.Caesar_with_key)

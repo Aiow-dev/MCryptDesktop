@@ -1688,7 +1688,21 @@ class Ui_MainWindow(object):
         self.encryption_table_number_sca = QtWidgets.QTableWidget(self.encrypt_output_tables_frame_2)
         self.encryption_table_number_sca.setStyleSheet("QTableWidget {\n"
 "    gridline-color: rgb(67, 67, 67);\n"
+"}\n"
+"\n"
+"QHeaderView::section {\n"
+"    color: rgb(255, 255, 255);\n"
+"    border: 1px solid rgb(67, 67, 67);\n"
+"    background-color: rgb(25, 24, 24);\n"
+"}\n"
+"\n"
+"QTableCornerButton::section {\n"
+"    border: 1px solid rgb(67, 67, 67);\n"
+"    background-color: rgb(25, 24, 24);\n"
 "}")
+        self.encryption_table_number_sca.setSizeAdjustPolicy(QtWidgets.QAbstractScrollArea.AdjustToContents)
+        self.encryption_table_number_sca.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
+        self.encryption_table_number_sca.setVerticalScrollMode(QtWidgets.QAbstractItemView.ScrollPerPixel)
         self.encryption_table_number_sca.setRowCount(11)
         self.encryption_table_number_sca.setColumnCount(6)
         self.encryption_table_number_sca.setObjectName("encryption_table_number_sca")
@@ -1696,7 +1710,20 @@ class Ui_MainWindow(object):
         self.encryption_table_letter_sca = QtWidgets.QTableWidget(self.encrypt_output_tables_frame_2)
         self.encryption_table_letter_sca.setStyleSheet("QTableWidget {\n"
 "    gridline-color: rgb(67, 67, 67);\n"
+"}\n"
+"\n"
+"QHeaderView::section {\n"
+"    color: rgb(255, 255, 255);\n"
+"    border: 1px solid rgb(67, 67, 67);\n"
+"    background-color: rgb(25, 24, 24);\n"
+"}\n"
+"\n"
+"QTableCornerButton::section {\n"
+"    border: 1px solid rgb(67, 67, 67);\n"
+"    background-color: rgb(25, 24, 24);\n"
 "}")
+        self.encryption_table_letter_sca.setSizeAdjustPolicy(QtWidgets.QAbstractScrollArea.AdjustToContents)
+        self.encryption_table_letter_sca.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
         self.encryption_table_letter_sca.setRowCount(11)
         self.encryption_table_letter_sca.setColumnCount(6)
         self.encryption_table_letter_sca.setObjectName("encryption_table_letter_sca")
@@ -2003,7 +2030,20 @@ class Ui_MainWindow(object):
         self.un_encryption_table_number_sca = QtWidgets.QTableWidget(self.un_encrypt_output_tables_frame_3)
         self.un_encryption_table_number_sca.setStyleSheet("QTableWidget {\n"
 "    gridline-color: rgb(67, 67, 67);\n"
+"}\n"
+"\n"
+"QHeaderView::section {\n"
+"    color: rgb(255, 255, 255);\n"
+"    border: 1px solid rgb(67, 67, 67);\n"
+"    background-color: rgb(25, 24, 24);\n"
+"}\n"
+"\n"
+"QTableCornerButton::section {\n"
+"    border: 1px solid rgb(67, 67, 67);\n"
+"    background-color: rgb(25, 24, 24);\n"
 "}")
+        self.un_encryption_table_number_sca.setSizeAdjustPolicy(QtWidgets.QAbstractScrollArea.AdjustToContents)
+        self.un_encryption_table_number_sca.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
         self.un_encryption_table_number_sca.setRowCount(11)
         self.un_encryption_table_number_sca.setColumnCount(6)
         self.un_encryption_table_number_sca.setObjectName("un_encryption_table_number_sca")
@@ -2011,7 +2051,20 @@ class Ui_MainWindow(object):
         self.un_encryption_table_letter_sca = QtWidgets.QTableWidget(self.un_encrypt_output_tables_frame_3)
         self.un_encryption_table_letter_sca.setStyleSheet("QTableWidget {\n"
 "    gridline-color: rgb(67, 67, 67);\n"
+"}\n"
+"\n"
+"QHeaderView::section {\n"
+"    color: rgb(255, 255, 255);\n"
+"    border: 1px solid rgb(67, 67, 67);\n"
+"    background-color: rgb(25, 24, 24);\n"
+"}\n"
+"\n"
+"QTableCornerButton::section {\n"
+"    border: 1px solid rgb(67, 67, 67);\n"
+"    background-color: rgb(25, 24, 24);\n"
 "}")
+        self.un_encryption_table_letter_sca.setSizeAdjustPolicy(QtWidgets.QAbstractScrollArea.AdjustToContents)
+        self.un_encryption_table_letter_sca.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
         self.un_encryption_table_letter_sca.setRowCount(11)
         self.un_encryption_table_letter_sca.setColumnCount(6)
         self.un_encryption_table_letter_sca.setObjectName("un_encryption_table_letter_sca")
@@ -2022,9 +2075,289 @@ class Ui_MainWindow(object):
         self.stacked_widget_sca_2.addWidget(self.main_page_sca_2)
         self.verticalLayout_39.addWidget(self.stacked_widget_sca_2)
         self.types_caesar_system_tabs.addTab(self.un_caesar_system_affine_tab, "")
-        self.double_key_permutation_tab_2 = QtWidgets.QWidget()
-        self.double_key_permutation_tab_2.setObjectName("double_key_permutation_tab_2")
-        self.types_caesar_system_tabs.addTab(self.double_key_permutation_tab_2, "")
+        self.caesar_key_system_tab = QtWidgets.QWidget()
+        self.caesar_key_system_tab.setObjectName("caesar_key_system_tab")
+        self.verticalLayout_53 = QtWidgets.QVBoxLayout(self.caesar_key_system_tab)
+        self.verticalLayout_53.setObjectName("verticalLayout_53")
+        self.stacked_widget_sck = QtWidgets.QStackedWidget(self.caesar_key_system_tab)
+        self.stacked_widget_sck.setStyleSheet("QStackedWidget {\n"
+"    color: rgb(255, 255, 255);\n"
+"}")
+        self.stacked_widget_sck.setObjectName("stacked_widget_sck")
+        self.main_page_sck = QtWidgets.QWidget()
+        self.main_page_sck.setObjectName("main_page_sck")
+        self.horizontalLayout_66 = QtWidgets.QHBoxLayout(self.main_page_sck)
+        self.horizontalLayout_66.setObjectName("horizontalLayout_66")
+        self.encrypt_main_frame_sck_2 = QtWidgets.QFrame(self.main_page_sck)
+        self.encrypt_main_frame_sck_2.setMinimumSize(QtCore.QSize(0, 0))
+        self.encrypt_main_frame_sck_2.setStyleSheet("QFrame {\n"
+"    background-color: rgb(25, 24, 24);\n"
+"    border-radius: 10px;\n"
+"}")
+        self.encrypt_main_frame_sck_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.encrypt_main_frame_sck_2.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.encrypt_main_frame_sck_2.setObjectName("encrypt_main_frame_sck_2")
+        self.verticalLayout_41 = QtWidgets.QVBoxLayout(self.encrypt_main_frame_sck_2)
+        self.verticalLayout_41.setObjectName("verticalLayout_41")
+        self.encrypt_inputs_main_frame_7 = QtWidgets.QFrame(self.encrypt_main_frame_sck_2)
+        self.encrypt_inputs_main_frame_7.setStyleSheet("")
+        self.encrypt_inputs_main_frame_7.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.encrypt_inputs_main_frame_7.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.encrypt_inputs_main_frame_7.setObjectName("encrypt_inputs_main_frame_7")
+        self.verticalLayout_43 = QtWidgets.QVBoxLayout(self.encrypt_inputs_main_frame_7)
+        self.verticalLayout_43.setObjectName("verticalLayout_43")
+        self.encrypt_input_message_frame_6 = QtWidgets.QFrame(self.encrypt_inputs_main_frame_7)
+        self.encrypt_input_message_frame_6.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.encrypt_input_message_frame_6.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.encrypt_input_message_frame_6.setObjectName("encrypt_input_message_frame_6")
+        self.horizontalLayout_58 = QtWidgets.QHBoxLayout(self.encrypt_input_message_frame_6)
+        self.horizontalLayout_58.setObjectName("horizontalLayout_58")
+        self.message_label_sck = QtWidgets.QLabel(self.encrypt_input_message_frame_6)
+        self.message_label_sck.setMinimumSize(QtCore.QSize(105, 0))
+        self.message_label_sck.setMaximumSize(QtCore.QSize(16777215, 40))
+        self.message_label_sck.setStyleSheet("QLabel {\n"
+"    font-size: 19px;\n"
+"    color: rgb(222, 221, 218);\n"
+"}")
+        self.message_label_sck.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
+        self.message_label_sck.setObjectName("message_label_sck")
+        self.horizontalLayout_58.addWidget(self.message_label_sck)
+        self.message_text_sck = QtWidgets.QLineEdit(self.encrypt_input_message_frame_6)
+        self.message_text_sck.setMinimumSize(QtCore.QSize(0, 56))
+        self.message_text_sck.setStyleSheet("QLineEdit {\n"
+"    background-color: rgb(67, 67, 67);\n"
+"    color: rgb(222, 221, 218);\n"
+"    border-radius: 3px;\n"
+"    height: 37px;\n"
+"    font-size: 16px;\n"
+"    padding: 2 px;\n"
+"    margin: 0 0 15 0 px;\n"
+"}\n"
+"\n"
+"QLineEdit:focus {\n"
+"    background-color: rgb(103, 101, 101);\n"
+"}")
+        self.message_text_sck.setClearButtonEnabled(True)
+        self.message_text_sck.setObjectName("message_text_sck")
+        self.horizontalLayout_58.addWidget(self.message_text_sck)
+        self.verticalLayout_43.addWidget(self.encrypt_input_message_frame_6)
+        self.encrypt_input_key_word_frame = QtWidgets.QFrame(self.encrypt_inputs_main_frame_7)
+        self.encrypt_input_key_word_frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.encrypt_input_key_word_frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.encrypt_input_key_word_frame.setObjectName("encrypt_input_key_word_frame")
+        self.horizontalLayout_59 = QtWidgets.QHBoxLayout(self.encrypt_input_key_word_frame)
+        self.horizontalLayout_59.setObjectName("horizontalLayout_59")
+        self.key_word_label_sck = QtWidgets.QLabel(self.encrypt_input_key_word_frame)
+        self.key_word_label_sck.setMinimumSize(QtCore.QSize(105, 45))
+        self.key_word_label_sck.setMaximumSize(QtCore.QSize(64, 40))
+        self.key_word_label_sck.setStyleSheet("QLabel {\n"
+"    font-size: 19px;\n"
+"    color: rgb(222, 221, 218);\n"
+"}")
+        self.key_word_label_sck.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
+        self.key_word_label_sck.setWordWrap(True)
+        self.key_word_label_sck.setObjectName("key_word_label_sck")
+        self.horizontalLayout_59.addWidget(self.key_word_label_sck)
+        self.key_word_text_sck = QtWidgets.QLineEdit(self.encrypt_input_key_word_frame)
+        self.key_word_text_sck.setMinimumSize(QtCore.QSize(0, 56))
+        self.key_word_text_sck.setStyleSheet("QLineEdit {\n"
+"    background-color: rgb(67, 67, 67);\n"
+"    color: rgb(222, 221, 218);\n"
+"    border-radius: 3px;\n"
+"    height: 37px;\n"
+"    font-size: 16px;\n"
+"    padding: 2 px;\n"
+"    margin: 0 0 15 0 px;\n"
+"}\n"
+"\n"
+"QLineEdit:focus {\n"
+"    background-color: rgb(103, 101, 101);\n"
+"}")
+        self.key_word_text_sck.setClearButtonEnabled(True)
+        self.key_word_text_sck.setObjectName("key_word_text_sck")
+        self.horizontalLayout_59.addWidget(self.key_word_text_sck)
+        self.verticalLayout_43.addWidget(self.encrypt_input_key_word_frame)
+        self.encrypt_input_key_k_frame = QtWidgets.QFrame(self.encrypt_inputs_main_frame_7)
+        self.encrypt_input_key_k_frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.encrypt_input_key_k_frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.encrypt_input_key_k_frame.setObjectName("encrypt_input_key_k_frame")
+        self.horizontalLayout_60 = QtWidgets.QHBoxLayout(self.encrypt_input_key_k_frame)
+        self.horizontalLayout_60.setObjectName("horizontalLayout_60")
+        self.key_k_label_sck = QtWidgets.QLabel(self.encrypt_input_key_k_frame)
+        self.key_k_label_sck.setMinimumSize(QtCore.QSize(105, 0))
+        self.key_k_label_sck.setMaximumSize(QtCore.QSize(16777215, 40))
+        self.key_k_label_sck.setToolTip("Количество столбцов шифрующей таблицы")
+        self.key_k_label_sck.setStyleSheet("QLabel {\n"
+"    font-size: 19px;\n"
+"    color: rgb(222, 221, 218);\n"
+"}")
+        self.key_k_label_sck.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
+        self.key_k_label_sck.setObjectName("key_k_label_sck")
+        self.horizontalLayout_60.addWidget(self.key_k_label_sck)
+        self.key_k_text_sck = QtWidgets.QLineEdit(self.encrypt_input_key_k_frame)
+        self.key_k_text_sck.setMinimumSize(QtCore.QSize(0, 56))
+        self.key_k_text_sck.setStyleSheet("QLineEdit {\n"
+"    background-color: rgb(67, 67, 67);\n"
+"    color: rgb(222, 221, 218);\n"
+"    border-radius: 3px;\n"
+"    height: 37px;\n"
+"    font-size: 16px;\n"
+"    padding: 2 px;\n"
+"    margin: 0 0 15 0 px;\n"
+"}\n"
+"\n"
+"QLineEdit:focus {\n"
+"    background-color: rgb(103, 101, 101);\n"
+"}")
+        self.key_k_text_sck.setClearButtonEnabled(True)
+        self.key_k_text_sck.setObjectName("key_k_text_sck")
+        self.horizontalLayout_60.addWidget(self.key_k_text_sck)
+        self.verticalLayout_43.addWidget(self.encrypt_input_key_k_frame)
+        self.verticalLayout_41.addWidget(self.encrypt_inputs_main_frame_7)
+        self.encrypt_outputs_main_frame_7 = QtWidgets.QFrame(self.encrypt_main_frame_sck_2)
+        self.encrypt_outputs_main_frame_7.setStyleSheet("")
+        self.encrypt_outputs_main_frame_7.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.encrypt_outputs_main_frame_7.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.encrypt_outputs_main_frame_7.setObjectName("encrypt_outputs_main_frame_7")
+        self.verticalLayout_45 = QtWidgets.QVBoxLayout(self.encrypt_outputs_main_frame_7)
+        self.verticalLayout_45.setObjectName("verticalLayout_45")
+        self.encrypt_output_table_frame_9 = QtWidgets.QFrame(self.encrypt_outputs_main_frame_7)
+        self.encrypt_output_table_frame_9.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.encrypt_output_table_frame_9.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.encrypt_output_table_frame_9.setObjectName("encrypt_output_table_frame_9")
+        self.horizontalLayout_36 = QtWidgets.QHBoxLayout(self.encrypt_output_table_frame_9)
+        self.horizontalLayout_36.setObjectName("horizontalLayout_36")
+        self.encryption_table_text_label_sck = QtWidgets.QLabel(self.encrypt_output_table_frame_9)
+        self.encryption_table_text_label_sck.setMinimumSize(QtCore.QSize(105, 45))
+        self.encryption_table_text_label_sck.setMaximumSize(QtCore.QSize(16777215, 45))
+        self.encryption_table_text_label_sck.setToolTip("Количество столбцов шифрующей таблицы")
+        self.encryption_table_text_label_sck.setStyleSheet("QLabel {\n"
+"    font-size: 19px;\n"
+"    color: rgb(222, 221, 218);\n"
+"}")
+        self.encryption_table_text_label_sck.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
+        self.encryption_table_text_label_sck.setWordWrap(True)
+        self.encryption_table_text_label_sck.setObjectName("encryption_table_text_label_sck")
+        self.horizontalLayout_36.addWidget(self.encryption_table_text_label_sck)
+        self.encryption_table_text_sck = QtWidgets.QTextEdit(self.encrypt_output_table_frame_9)
+        self.encryption_table_text_sck.setStyleSheet("QTextEdit {\n"
+"    background-color: rgb(67, 67, 67);\n"
+"    border-radius: 3px;\n"
+"    color: rgb(222, 221, 218);\n"
+"}\n"
+"\n"
+"QTextEdit:focus {\n"
+"    background-color: rgb(103, 101, 101);\n"
+"}")
+        self.encryption_table_text_sck.setReadOnly(True)
+        self.encryption_table_text_sck.setObjectName("encryption_table_text_sck")
+        self.horizontalLayout_36.addWidget(self.encryption_table_text_sck)
+        self.verticalLayout_45.addWidget(self.encrypt_output_table_frame_9)
+        self.encrypt_output_message_frame_9 = QtWidgets.QFrame(self.encrypt_outputs_main_frame_7)
+        self.encrypt_output_message_frame_9.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.encrypt_output_message_frame_9.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.encrypt_output_message_frame_9.setObjectName("encrypt_output_message_frame_9")
+        self.horizontalLayout_62 = QtWidgets.QHBoxLayout(self.encrypt_output_message_frame_9)
+        self.horizontalLayout_62.setObjectName("horizontalLayout_62")
+        self.encrypt_message_label_sck = QtWidgets.QLabel(self.encrypt_output_message_frame_9)
+        self.encrypt_message_label_sck.setMinimumSize(QtCore.QSize(105, 50))
+        self.encrypt_message_label_sck.setMaximumSize(QtCore.QSize(16777215, 40))
+        self.encrypt_message_label_sck.setStyleSheet("QLabel {\n"
+"    font-size: 19px;\n"
+"    color: rgb(222, 221, 218);\n"
+"}")
+        self.encrypt_message_label_sck.setScaledContents(False)
+        self.encrypt_message_label_sck.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
+        self.encrypt_message_label_sck.setWordWrap(True)
+        self.encrypt_message_label_sck.setObjectName("encrypt_message_label_sck")
+        self.horizontalLayout_62.addWidget(self.encrypt_message_label_sck)
+        self.encrypt_message_text_sck = QtWidgets.QLineEdit(self.encrypt_output_message_frame_9)
+        self.encrypt_message_text_sck.setStyleSheet("QLineEdit {\n"
+"    background-color: rgb(67, 67, 67);\n"
+"    color: rgb(222, 221, 218);\n"
+"    border-radius: 3px;\n"
+"    height: 37px;\n"
+"    font-size: 16px;\n"
+"    padding: 2 px;\n"
+"    margin: 0 0 15 0 px;\n"
+"}\n"
+"\n"
+"QLineEdit:focus {\n"
+"    background-color: rgb(103, 101, 101);\n"
+"}")
+        self.encrypt_message_text_sck.setReadOnly(True)
+        self.encrypt_message_text_sck.setObjectName("encrypt_message_text_sck")
+        self.horizontalLayout_62.addWidget(self.encrypt_message_text_sck)
+        self.verticalLayout_45.addWidget(self.encrypt_output_message_frame_9)
+        self.encrypt_buttons_main_frame_6 = QtWidgets.QFrame(self.encrypt_outputs_main_frame_7)
+        self.encrypt_buttons_main_frame_6.setStyleSheet("")
+        self.encrypt_buttons_main_frame_6.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.encrypt_buttons_main_frame_6.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.encrypt_buttons_main_frame_6.setObjectName("encrypt_buttons_main_frame_6")
+        self.horizontalLayout_63 = QtWidgets.QHBoxLayout(self.encrypt_buttons_main_frame_6)
+        self.horizontalLayout_63.setObjectName("horizontalLayout_63")
+        self.encrypt_btn_sck = QtWidgets.QPushButton(self.encrypt_buttons_main_frame_6)
+        self.encrypt_btn_sck.setMinimumSize(QtCore.QSize(0, 41))
+        self.encrypt_btn_sck.setMaximumSize(QtCore.QSize(251, 16777215))
+        self.encrypt_btn_sck.setStyleSheet("QPushButton {\n"
+"    background-color: rgb(67, 67, 67);\n"
+"    color: rgb(222, 221, 218);\n"
+"    border: none;\n"
+"    border-radius: 3px;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: rgb(103, 101, 101);\n"
+"}")
+        self.encrypt_btn_sck.setObjectName("encrypt_btn_sck")
+        self.horizontalLayout_63.addWidget(self.encrypt_btn_sck)
+        self.verticalLayout_45.addWidget(self.encrypt_buttons_main_frame_6)
+        self.verticalLayout_41.addWidget(self.encrypt_outputs_main_frame_7)
+        self.horizontalLayout_66.addWidget(self.encrypt_main_frame_sck_2)
+        self.encrypt_main_frame_sck = QtWidgets.QFrame(self.main_page_sck)
+        self.encrypt_main_frame_sck.setMinimumSize(QtCore.QSize(0, 0))
+        self.encrypt_main_frame_sck.setStyleSheet("QFrame {\n"
+"    background-color: rgb(25, 24, 24);\n"
+"    border-radius: 10px;\n"
+"}")
+        self.encrypt_main_frame_sck.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.encrypt_main_frame_sck.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.encrypt_main_frame_sck.setObjectName("encrypt_main_frame_sck")
+        self.verticalLayout_46 = QtWidgets.QVBoxLayout(self.encrypt_main_frame_sck)
+        self.verticalLayout_46.setObjectName("verticalLayout_46")
+        self.encrypt_outputs_main_frame_8 = QtWidgets.QFrame(self.encrypt_main_frame_sck)
+        self.encrypt_outputs_main_frame_8.setStyleSheet("")
+        self.encrypt_outputs_main_frame_8.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.encrypt_outputs_main_frame_8.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.encrypt_outputs_main_frame_8.setObjectName("encrypt_outputs_main_frame_8")
+        self.verticalLayout_48 = QtWidgets.QVBoxLayout(self.encrypt_outputs_main_frame_8)
+        self.verticalLayout_48.setObjectName("verticalLayout_48")
+        self.encryption_table_sck = QtWidgets.QTableWidget(self.encrypt_outputs_main_frame_8)
+        self.encryption_table_sck.setStyleSheet("QTableWidget {\n"
+"    gridline-color: rgb(67, 67, 67);\n"
+"}\n"
+"\n"
+"QHeaderView::section {\n"
+"    color: rgb(255, 255, 255);\n"
+"    border: 1px solid rgb(67, 67, 67);\n"
+"    background-color: rgb(25, 24, 24);\n"
+"}\n"
+"\n"
+"QTableCornerButton::section {\n"
+"    border: 1px solid rgb(67, 67, 67);\n"
+"    background-color: rgb(25, 24, 24);\n"
+"}")
+        self.encryption_table_sck.setSizeAdjustPolicy(QtWidgets.QAbstractScrollArea.AdjustToContents)
+        self.encryption_table_sck.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
+        self.encryption_table_sck.setRowCount(11)
+        self.encryption_table_sck.setColumnCount(6)
+        self.encryption_table_sck.setObjectName("encryption_table_sck")
+        self.verticalLayout_48.addWidget(self.encryption_table_sck)
+        self.verticalLayout_46.addWidget(self.encrypt_outputs_main_frame_8)
+        self.horizontalLayout_66.addWidget(self.encrypt_main_frame_sck)
+        self.stacked_widget_sck.addWidget(self.main_page_sck)
+        self.verticalLayout_53.addWidget(self.stacked_widget_sck)
+        self.types_caesar_system_tabs.addTab(self.caesar_key_system_tab, "")
         self.verticalLayout_31.addWidget(self.types_caesar_system_tabs)
         self.main_encryption_tabs.addTab(self.caesar_system_tab, "")
         self.tab = QtWidgets.QWidget()
@@ -2048,10 +2381,11 @@ class Ui_MainWindow(object):
         self.types_table_permutation_tabs.setCurrentIndex(1)
         self.stacked_widget_smp.setCurrentIndex(0)
         self.stacked_widget_kmp.setCurrentIndex(0)
-        self.types_caesar_system_tabs.setCurrentIndex(2)
+        self.types_caesar_system_tabs.setCurrentIndex(3)
         self.stacked_widget_sc.setCurrentIndex(0)
         self.stacked_widget_sca.setCurrentIndex(0)
         self.stacked_widget_sca_2.setCurrentIndex(0)
+        self.stacked_widget_sck.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -2145,15 +2479,15 @@ class Ui_MainWindow(object):
         self.un_encrypt_message_label_sc.setText(_translate("MainWindow", "Расшифрованное сообщение"))
         self.un_encrypt_message_text_sc.setPlaceholderText(_translate("MainWindow", "Текст расшифрованного сообщения"))
         self.un_encrypt_btn_sc.setText(_translate("MainWindow", "Расшифровать сообщение"))
-        self.types_caesar_system_tabs.setTabText(self.types_caesar_system_tabs.indexOf(self.system_caesar_tab), _translate("MainWindow", "Система шифрования Цезаря"))
+        self.types_caesar_system_tabs.setTabText(self.types_caesar_system_tabs.indexOf(self.system_caesar_tab), _translate("MainWindow", "Система Цезаря"))
         self.message_label_sca.setToolTip(_translate("MainWindow", "Текст шифруемого сообщения"))
         self.message_label_sca.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:14pt;\">Сообщение</span></p></body></html>"))
         self.message_text_sca.setPlaceholderText(_translate("MainWindow", "Текст шифруемого сообщения"))
         self.key_a_label_sca.setToolTip(_translate("MainWindow", "Количество строк шифрующей таблицы"))
         self.key_a_label_sca.setText(_translate("MainWindow", "Ключ a"))
-        self.key_a_text_sca.setPlaceholderText(_translate("MainWindow", "Количество строк шифрующей таблицы"))
+        self.key_a_text_sca.setPlaceholderText(_translate("MainWindow", "Числовой ключ a"))
         self.key_b_label_sca.setText(_translate("MainWindow", "Ключ b"))
-        self.key_b_text_sca.setPlaceholderText(_translate("MainWindow", "Количество столбцов шифрующей таблицы"))
+        self.key_b_text_sca.setPlaceholderText(_translate("MainWindow", "Числовой ключ b"))
         self.encrypt_output_table_number_label_sca.setText(_translate("MainWindow", "Таблица номеров"))
         self.encrypt_output_table_letter_label_sca.setText(_translate("MainWindow", "Таблица букв"))
         self.encryption_table_number_text_sca.setPlaceholderText(_translate("MainWindow", "Текст шифрующей таблицы"))
@@ -2168,9 +2502,9 @@ class Ui_MainWindow(object):
         self.un_message_text_sca.setPlaceholderText(_translate("MainWindow", "Текст расшифруемого сообщения"))
         self.un_key_a_label_sca.setToolTip(_translate("MainWindow", "Количество строк шифрующей таблицы"))
         self.un_key_a_label_sca.setText(_translate("MainWindow", "Ключ a"))
-        self.un_key_a_text_sca.setPlaceholderText(_translate("MainWindow", "Количество строк шифрующей таблицы"))
+        self.un_key_a_text_sca.setPlaceholderText(_translate("MainWindow", "Числовой ключ a"))
         self.un_key_b_label_sca.setText(_translate("MainWindow", "Ключ b"))
-        self.un_key_b_text_sca.setPlaceholderText(_translate("MainWindow", "Количество столбцов шифрующей таблицы"))
+        self.un_key_b_text_sca.setPlaceholderText(_translate("MainWindow", "Числовой ключ b"))
         self.un_encrypt_output_table_number_label_sca.setText(_translate("MainWindow", "Таблица номеров"))
         self.un_encrypt_output_table_letter_label_sca.setText(_translate("MainWindow", "Таблица букв"))
         self.un_encryption_table_number_text_sca.setPlaceholderText(_translate("MainWindow", "Текст шифрующей таблицы"))
@@ -2180,7 +2514,21 @@ class Ui_MainWindow(object):
         self.un_encrypt_message_text_sca.setPlaceholderText(_translate("MainWindow", "Текст расшифрованного сообщения"))
         self.un_encrypt_btn_sca.setText(_translate("MainWindow", "Расшифровать сообщение"))
         self.types_caesar_system_tabs.setTabText(self.types_caesar_system_tabs.indexOf(self.un_caesar_system_affine_tab), _translate("MainWindow", "Афинная система (дешифрование)"))
-        self.types_caesar_system_tabs.setTabText(self.types_caesar_system_tabs.indexOf(self.double_key_permutation_tab_2), _translate("MainWindow", "Система шифрования Цезаря с ключевым словом"))
+        self.message_label_sck.setToolTip(_translate("MainWindow", "Текст шифруемого сообщения"))
+        self.message_label_sck.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:14pt;\">Сообщение</span></p></body></html>"))
+        self.message_text_sck.setPlaceholderText(_translate("MainWindow", "Текст шифруемого сообщения"))
+        self.key_word_label_sck.setToolTip(_translate("MainWindow", "Количество строк шифрующей таблицы"))
+        self.key_word_label_sck.setText(_translate("MainWindow", "Ключевое слово"))
+        self.key_word_text_sck.setPlaceholderText(_translate("MainWindow", "Текст ключевого слова"))
+        self.key_k_label_sck.setText(_translate("MainWindow", "Ключ k"))
+        self.key_k_text_sck.setPlaceholderText(_translate("MainWindow", "Числовой ключ k"))
+        self.encryption_table_text_label_sck.setText(_translate("MainWindow", "Таблица подстановок"))
+        self.encryption_table_text_sck.setPlaceholderText(_translate("MainWindow", "Текст таблицы подстановок таблицы"))
+        self.encrypt_message_label_sck.setToolTip(_translate("MainWindow", "Шифруемое сообщение"))
+        self.encrypt_message_label_sck.setText(_translate("MainWindow", "Зашифрованное сообщение"))
+        self.encrypt_message_text_sck.setPlaceholderText(_translate("MainWindow", "Текст зашифрованного сообщения"))
+        self.encrypt_btn_sck.setText(_translate("MainWindow", "Зашифровать сообщение"))
+        self.types_caesar_system_tabs.setTabText(self.types_caesar_system_tabs.indexOf(self.caesar_key_system_tab), _translate("MainWindow", "Система Цезаря с ключевым словом"))
         self.main_encryption_tabs.setTabText(self.main_encryption_tabs.indexOf(self.caesar_system_tab), _translate("MainWindow", "Системы Цезаря"))
         self.main_encryption_tabs.setTabText(self.main_encryption_tabs.indexOf(self.tab), _translate("MainWindow", "О программе"))
 from Resources import resources_rc

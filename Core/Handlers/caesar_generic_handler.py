@@ -63,3 +63,30 @@ def caesar_affine_generic_handler(message_obj, key_a_obj, key_b_obj, encrypt_mes
         )
     except AttributeError as attribute_error:
         print(attribute_error)
+
+
+def caesar_key_generic_handler(message_obj, key_word_obj, key_k_obj, encrypt_message_obj,
+                               encryption_message_table_text_obj, encryption_message_table_obj,
+                               function_caesar_obj):
+    try:
+        message_text = message_obj.text()
+        key_word_text = key_word_obj.text().lower()
+        key_k_text = int(key_k_obj.text())
+
+        encrypt_message, encrypt_message_table = function_caesar_obj(message_text, key_k_text, key_word_text)
+        encrypt_message_obj.setText(encrypt_message)
+
+        letter_column_values, caesar_key_table = table_helpers.construct_caesar_key_table_text(encrypt_message_table)
+
+        encryption_message_table_text_obj.setText(caesar_key_table)
+
+        table_helpers.construct_caesar_key_table(letter_column_values, encryption_message_table_obj)
+    except ValueError as value_error:
+        print(value_error)
+
+        encrypt_message_obj.setText('Ошибка. Проверьте корректность введенных данных!')
+        encryption_message_table_text_obj.setText(
+            'Ошибка. Невозможно построить таблицу. Проверьте корректность введенных данных!'
+        )
+    except AttributeError as attribute_error:
+        print(attribute_error)

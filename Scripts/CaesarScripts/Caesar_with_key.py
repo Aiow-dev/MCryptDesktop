@@ -12,7 +12,7 @@ def Caesar_with_key(message, key_num, key_word):   # "ПРИЛЕТАЮ ЗАВТ�
             shifr += i
         else:
             shifr += shifr_table[table.find(i)]
-    return shifr
+    return shifr, shifr_table
 
 
 def sum(string, table):
@@ -21,3 +21,6 @@ def sum(string, table):
             table += i
     return table
 
+
+if __name__ == '__main__':
+    print(Caesar_with_key('ПРИЛЕТАЮ ЗАВТРА', 5, 'работа'))

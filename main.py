@@ -28,4 +28,6 @@ if __name__ == '__main__':
     ui.encrypt_btn_sca.clicked.connect(handlers_wrapper.caesar_affine_encryption_handler)
     ui.un_encrypt_btn_sca.clicked.connect(handlers_wrapper.un_caesar_affine_encryption_handler)
 
+    ui.encrypt_btn_sck.clicked.connect(handlers_wrapper.caesar_key_encryption_handler)
+
     sys.exit(app.exec_())
