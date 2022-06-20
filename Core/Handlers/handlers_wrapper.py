@@ -71,4 +71,6 @@ class HandlersWrapper:
                                           self.ui.un_key_b_text_sca, self.ui.un_encrypt_message_text_sca,
                                           self.ui.un_encryption_table_number_text_sca,
                                           self.ui.un_encryption_table_letter_text_sca,
+                                          self.ui.un_encryption_table_number_sca,
+                                          self.ui.un_encryption_table_letter_sca,
                                           UnCaesar_Afin.UnCaesar_Afin)

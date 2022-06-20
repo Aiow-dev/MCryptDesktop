@@ -91,7 +91,7 @@ QTabBar::tab:hover {
            <string notr="true"/>
           </property>
           <property name="currentIndex">
-           <number>0</number>
+           <number>1</number>
           </property>
           <widget class="QWidget" name="simple_permutation_tab">
            <attribute name="title">
@@ -1998,7 +1998,7 @@ QPushButton:pressed {
            <string notr="true"/>
           </property>
           <property name="currentIndex">
-           <number>1</number>
+           <number>2</number>
           </property>
           <widget class="QWidget" name="system_caesar_tab">
            <attribute name="title">
@@ -2779,7 +2779,7 @@ QPushButton:pressed {
           </widget>
           <widget class="QWidget" name="caesar_affine_system_tab">
            <attribute name="title">
-            <string>Афинная система подстановок Цезаря</string>
+            <string>Афинная система</string>
            </attribute>
            <layout class="QVBoxLayout" name="verticalLayout_24">
             <item>
@@ -2793,7 +2793,7 @@ QPushButton:pressed {
                <number>0</number>
               </property>
               <widget class="QWidget" name="main_page_sca">
-               <layout class="QHBoxLayout" name="horizontalLayout_40">
+               <layout class="QHBoxLayout" name="horizontalLayout_64">
                 <item>
                  <widget class="QFrame" name="encrypt_main_frame_4">
                   <property name="minimumSize">
@@ -3171,72 +3171,6 @@ QTextEdit:focus {
                            </layout>
                           </widget>
                          </item>
-                         <item>
-                          <widget class="QFrame" name="encrypt_output_tables_frame">
-                           <property name="frameShape">
-                            <enum>QFrame::StyledPanel</enum>
-                           </property>
-                           <property name="frameShadow">
-                            <enum>QFrame::Raised</enum>
-                           </property>
-                           <layout class="QHBoxLayout" name="horizontalLayout_36">
-                            <item>
-                             <widget class="QTableWidget" name="encryption_table_number_sca">
-                              <property name="rowCount">
-                               <number>11</number>
-                              </property>
-                              <property name="columnCount">
-                               <number>6</number>
-                              </property>
-                              <row/>
-                              <row/>
-                              <row/>
-                              <row/>
-                              <row/>
-                              <row/>
-                              <row/>
-                              <row/>
-                              <row/>
-                              <row/>
-                              <row/>
-                              <column/>
-                              <column/>
-                              <column/>
-                              <column/>
-                              <column/>
-                              <column/>
-                             </widget>
-                            </item>
-                            <item>
-                             <widget class="QTableWidget" name="encryption_table_letter_sca">
-                              <property name="rowCount">
-                               <number>11</number>
-                              </property>
-                              <property name="columnCount">
-                               <number>6</number>
-                              </property>
-                              <row/>
-                              <row/>
-                              <row/>
-                              <row/>
-                              <row/>
-                              <row/>
-                              <row/>
-                              <row/>
-                              <row/>
-                              <row/>
-                              <row/>
-                              <column/>
-                              <column/>
-                              <column/>
-                              <column/>
-                              <column/>
-                              <column/>
-                             </widget>
-                            </item>
-                           </layout>
-                          </widget>
-                         </item>
                         </layout>
                        </widget>
                       </item>
@@ -3367,6 +3301,144 @@ QPushButton:pressed {
                  </widget>
                 </item>
                 <item>
+                 <widget class="QFrame" name="un_encrypt_main_frame_sca">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QFrame {
+	background-color: rgb(25, 24, 24);
+	border-radius: 10px;
+}</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_38">
+                   <item>
+                    <widget class="QFrame" name="encrypt_outputs_main_frame_5">
+                     <property name="styleSheet">
+                      <string notr="true"/>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_37">
+                      <item>
+                       <widget class="QFrame" name="encrypt_output_tables_frame_2">
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_30">
+                         <item>
+                          <widget class="QTableWidget" name="encryption_table_number_sca">
+                           <property name="styleSheet">
+                            <string notr="true">QTableWidget {
+	gridline-color: rgb(67, 67, 67);
+}</string>
+                           </property>
+                           <property name="rowCount">
+                            <number>11</number>
+                           </property>
+                           <property name="columnCount">
+                            <number>6</number>
+                           </property>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <column/>
+                           <column/>
+                           <column/>
+                           <column/>
+                           <column/>
+                           <column/>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QTableWidget" name="encryption_table_letter_sca">
+                           <property name="styleSheet">
+                            <string notr="true">QTableWidget {
+	gridline-color: rgb(67, 67, 67);
+}</string>
+                           </property>
+                           <property name="rowCount">
+                            <number>11</number>
+                           </property>
+                           <property name="columnCount">
+                            <number>6</number>
+                           </property>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <column/>
+                           <column/>
+                           <column/>
+                           <column/>
+                           <column/>
+                           <column/>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="un_caesar_system_affine_tab">
+           <attribute name="title">
+            <string>Афинная система (дешифрование)</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_39">
+            <item>
+             <widget class="QStackedWidget" name="stacked_widget_sca_2">
+              <property name="styleSheet">
+               <string notr="true">QStackedWidget {
+	color: rgb(255, 255, 255);
+}</string>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <widget class="QWidget" name="main_page_sca_2">
+               <layout class="QHBoxLayout" name="horizontalLayout_65">
+                <item>
                  <widget class="QFrame" name="un_encrypt_main_frame_sca_4">
                   <property name="minimumSize">
                    <size>
@@ -3463,7 +3535,7 @@ QLineEdit:focus {
 }</string>
                            </property>
                            <property name="placeholderText">
-                            <string>Текст шифруемого сообщения</string>
+                            <string>Текст расшифруемого сообщения</string>
                            </property>
                            <property name="clearButtonEnabled">
                             <bool>true</bool>
@@ -3779,7 +3851,7 @@ QTextEdit:focus {
 }</string>
                            </property>
                            <property name="text">
-                            <string>Зашифрованное сообщение</string>
+                            <string>Расшифрованное сообщение</string>
                            </property>
                            <property name="scaledContents">
                             <bool>false</bool>
@@ -3813,7 +3885,7 @@ QLineEdit:focus {
                             <bool>true</bool>
                            </property>
                            <property name="placeholderText">
-                            <string>Текст зашифрованного сообщения</string>
+                            <string>Текст расшифрованного сообщения</string>
                            </property>
                           </widget>
                          </item>
@@ -3861,6 +3933,121 @@ QPushButton:pressed {
                            <property name="text">
                             <string>Расшифровать сообщение</string>
                            </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                     </layout>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QFrame" name="un_encrypt_main_frame_sca_2">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QFrame {
+	background-color: rgb(25, 24, 24);
+	border-radius: 10px;
+}</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_42">
+                   <item>
+                    <widget class="QFrame" name="un_encrypt_outputs_main_frame_4">
+                     <property name="styleSheet">
+                      <string notr="true"/>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <layout class="QVBoxLayout" name="verticalLayout_40">
+                      <item>
+                       <widget class="QFrame" name="un_encrypt_output_tables_frame_3">
+                        <property name="frameShape">
+                         <enum>QFrame::StyledPanel</enum>
+                        </property>
+                        <property name="frameShadow">
+                         <enum>QFrame::Raised</enum>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_44">
+                         <item>
+                          <widget class="QTableWidget" name="un_encryption_table_number_sca">
+                           <property name="styleSheet">
+                            <string notr="true">QTableWidget {
+	gridline-color: rgb(67, 67, 67);
+}</string>
+                           </property>
+                           <property name="rowCount">
+                            <number>11</number>
+                           </property>
+                           <property name="columnCount">
+                            <number>6</number>
+                           </property>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <column/>
+                           <column/>
+                           <column/>
+                           <column/>
+                           <column/>
+                           <column/>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QTableWidget" name="un_encryption_table_letter_sca">
+                           <property name="styleSheet">
+                            <string notr="true">QTableWidget {
+	gridline-color: rgb(67, 67, 67);
+}</string>
+                           </property>
+                           <property name="rowCount">
+                            <number>11</number>
+                           </property>
+                           <property name="columnCount">
+                            <number>6</number>
+                           </property>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <row/>
+                           <column/>
+                           <column/>
+                           <column/>
+                           <column/>
+                           <column/>
+                           <column/>
                           </widget>
                          </item>
                         </layout>

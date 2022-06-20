@@ -1,3 +1,7 @@
+from PyQt5.QtGui import QBrush, QColor
+from PyQt5.QtWidgets import QTableWidgetItem
+
+
 def table_to_str(encrypt_message_table):
     return ''.join('\t'.join(row) + '\n' for row in encrypt_message_table)
 
@@ -66,3 +70,63 @@ def construct_table(columns_values: tuple, table_header: str = None, columns_hea
     table += placeholder_line
 
     return table
+
+
+def generate_affine_table_number_column(key_a_text, key_b_text, start_t, end_t):
+    return [str((key_a_text * t + key_b_text) % 33) for t in range(start_t, end_t)]
+
+
+def generate_affine_table_column_headers(key_a_text, key_b_text):
+    key_text = f'{key_a_text}t+{key_b_text}'
+
+    return 't', key_text, 't', key_text, 't', key_text
+
+
+def construct_affine_table_number_text(key_a_text, key_b_text):
+    column_values = (
+        [str(i) for i in range(11)], generate_affine_table_number_column(key_a_text, key_b_text, 0, 11),
+        [str(i) for i in range(11, 22)], generate_affine_table_number_column(key_a_text, key_b_text, 11, 22),
+        [str(i) for i in range(22, 33)], generate_affine_table_number_column(key_a_text, key_b_text, 22, 33)
+    )
+
+    return column_values, construct_table(column_values, columns_headers=generate_affine_table_column_headers(
+        key_a_text, key_b_text
+    ))
+
+
+def generate_affine_table_letter_column(number_column_value):
+    letters_text = 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя'
+
+    return [letters_text[int(number_value)] for number_value in number_column_value]
+
+
+def construct_affine_table_letter_text(key_a_text, key_b_text, number_column_values):
+    column_values = (
+        generate_affine_table_letter_column(number_column_values[0]),
+        generate_affine_table_letter_column(number_column_values[1]),
+        generate_affine_table_letter_column(number_column_values[2]),
+        generate_affine_table_letter_column(number_column_values[3]),
+        generate_affine_table_letter_column(number_column_values[4]),
+        generate_affine_table_letter_column(number_column_values[5])
+    )
+
+    return column_values, construct_table(column_values, columns_headers=generate_affine_table_column_headers(
+        key_a_text, key_b_text
+    ))
+
+
+def construct_affine_table_column(number_column, column_value, encryption_message_table_obj):
+    for number_row, value in enumerate(column_value):
+        column_item = QTableWidgetItem(value)
+        column_item.setForeground(QBrush(QColor(255, 255, 255)))
+
+        encryption_message_table_obj.setItem(number_row, number_column, column_item)
+
+
+def construct_affine_table(key_a_text, key_b_text, column_values, encryption_message_table_obj):
+    encryption_message_table_obj.setHorizontalHeaderLabels(
+        generate_affine_table_column_headers(key_a_text, key_b_text)
+    )
+
+    for number_column, number_column_value in enumerate(column_values):
+        construct_affine_table_column(number_column, number_column_value, encryption_message_table_obj)
